@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>SudoHosting</title>
+
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+   <!-- Scripts -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+   <!-- CSS only -->
+   <link rel="stylesheet" href="../css/auth.css">
+   <link rel="stylesheet" href="../node_modules/bootstrap/compiler/bootstrap.css">
+   <link rel="stylesheet" href="../css/home.css">
+
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <iframe src="../common/header.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+
+    <div class="container-fluid py-5" id="background">
+        <div class="container py-5" id="login-container" style="width: 50em;">
+            <div class="col px-5 text-center">
+                <!-- Nome -->
+                <div class="row my-4">
+                    <div class="col col-lg-1 ">
+                        <p class="my-2 text-center font-weight-bold">Nome</p>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="container" id="login-campo">
+                            <input type="email" class="form-control" style="border-width: 0px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="row my-4">
+                    <div class="col col-lg-1 ">
+                        <p class="my-2 text-center font-weight-bold">Email</p>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="container" id="login-campo">
+                            <input type="password" class="form-control" style="border-width: 0px;">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senha -->
+                <div class="row my-4">
+                    <div class="col col-lg-1 ">
+                        <p class="my-2 text-center font-weight-bold">Senha</p>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="container" id="login-campo">
+                            <input class="form-control" style="border-width: 0px;">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Idade -->
+                <div class="row my-4">
+                    <div class="col col-lg-1 ">
+                        <p class="my-2 text-center font-weight-bold">Idade</p>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="container" id="login-campo">
+                            <input class="form-control" style="border-width: 0px;">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CPF -->
+                <div class="row my-4">
+                    <div class="col col-lg-1 ">
+                        <p class="my-2 text-center font-weight-bold">CPF</p>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="container" id="login-campo">
+                            <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');"  style="border-width: 0px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aluno etec -->
+                <div class="row my-4">
+                    <div class="col col-lg-3">
+                        <p class="my-2 text-center font-weight-bold">Participa da ETEC</p>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="container" id="login-campo">
+                            <input class="form-control" style="border-width: 0px;">
+                        </div>
+                    </div>
+                </div>
+                <div type="button" class="button mx-auto" style="width: 150px;">
+                    <p class="text-font my-auto p-2"><strong>Cadastrar</strong></p>
+                </div>
+                <div class="my-4">
+                    <lead>Estudantes da ETEC conseguem hospedagem grátis para o TCC.</lead>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <iframe src="../common/footer.html"
+     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+
+</body>
