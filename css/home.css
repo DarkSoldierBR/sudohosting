@@ -7,8 +7,18 @@
 
 }
 
+.triangle-vps:after {
+    content: ' ';
+    align-self: end;
+    border-top: 35rem solid #221E1C;
+    border-left: 75rem solid transparent;
+    padding: 15em;
+    position: absolute;
+
+}
+
 #fundo {
-    height: 108vh;
+    height: 100vh;
     padding: 0px;
     background-color: #FFDFD4;
 }
@@ -82,4 +92,8 @@ box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
 }
 .button-plan:hover{
     background-color: #86360E;
+}
+#desc-title{
+border-radius: 15px;
+background-color: #B59E96;
 }
