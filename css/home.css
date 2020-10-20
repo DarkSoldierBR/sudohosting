@@ -40,7 +40,8 @@
 }
 
 #container-price {
-    height: 180vh;
+    /* height: 0vh; */
+
     background-color: #FFDFD4;
 
 }
