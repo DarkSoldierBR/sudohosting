@@ -1,0 +1,14 @@
+//Conexão com o banco
+
+<?php include("classe/conexao.php");
+
+//SALVA OS DADOS NA TABELA
+ 
+ if(isset($_POST['cadastrar'])){
+	 $nome = $_POST['nome'];
+	 $nascimento = $_POST['nascimento'];
+     $email = $_POST['email'];
+     $senha = $_POST['senha'];
+	 $query = mysqli_query($con, "INSERT INTO cadusuario (nome, nascimento, email, senha) VALUES ('$nome', '$nascimento', '$email', '$senha');
+ }
+ ?>
