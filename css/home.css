@@ -18,8 +18,6 @@
 }
 
 #fundo {
-
-    height: 23rem;
     padding: 0px;
     background-image: linear-gradient(to bottom,#3C3532 50%,#9E1B19);
 }
@@ -30,9 +28,13 @@ path{
 
 /* TESTE */
 
-#getstarted {
+.getstarted {
     border-radius: 30px;
+    background-color: #FF0000;
     
+}
+.getstarted:hover{
+    background-color: #86360E;
 }
 
 #row {
