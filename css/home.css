@@ -45,10 +45,7 @@ path{
 }
 
 #container-price {
-    /* height: 0vh; */
-
     background-color: #FFDFD4;
-
 }
 #footer-services-backgroud{
     background-image: linear-gradient(#3C3532,#685C57);
@@ -63,11 +60,15 @@ path{
     background-image: linear-gradient(#FF0000,#FF5232);
 }
 #price-title-container{
-    background-color: #FF5232;
+    background: -webkit-linear-gradient(right,#8E0E00,#1F1C18);
+    background-size: 400%;
+    animation-name: animationgradient;
+    animation: animationgradient 15s infinite linear;
     border-radius: 30px;
     -webkit-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
--moz-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
+    -moz-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
+    box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
+
 }
 #price-plans-background{
     background-color: #FF9E81;
@@ -105,22 +106,25 @@ background-color: #B59E96;
 }
 .gradient-text{
     color: #FF9E81;
-    background: -webkit-linear-gradient(left,#FF0000,#C4FCFF,#C4FCFF,#FF0000);
-    background-size: 1600px 200px;
+    background: -webkit-linear-gradient(right,#8A2387,#E94057,#F27121);
+    background-size: 400%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation-name: animationgradienttitle;
-    animation: animationgradienttitle 5s infinite linear;
+    animation-name: animationgradient;
+    animation: animationgradient 8s infinite linear;
   }
-
-  @keyframes animationgradienttitle {
+  
+  @keyframes animationgradient {
     0% {
-        background-position: 0 1600px;
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
     }
     100% {
-        background-position: 1600px 0;
+        background-position: 0% 0%;
     }
-  }
+}
 .wave{
     overflow: hidden;
     background-color: #FFDFD4;
