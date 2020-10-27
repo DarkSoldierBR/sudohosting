@@ -20,10 +20,10 @@
         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
     <main class="bd-masthead" role="main">
 
-        <div class="triangle">
-
-        </div>
-        <div id="row" class="row justify-content-center">
+        
+        
+        <div class="container-fluid" id="fundo">
+            <div id="row" class="row justify-content-center">
             <div class="col">
                 <div class="container mt-4">
                     <div class="container text-center">
@@ -57,8 +57,38 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" id="fundo"></div> 
-        
+    </div> 
+
+    <!-- <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="30%" x2="0%" y2="100%">
+                  <stop offset="0%"   stop-color="#9E1B19"/>
+                  <stop offset="100%" stop-color="#9E1B19"/>
+                </linearGradient>
+              </defs>
+            <path d="M-0.85,60.68 C124.43,126.80 254.22,-51.82 500.84,80.42 L500.00,0.00 L0.00,0.00 Z"></path>
+          </svg>
+    </div> -->
+    <div class="wave" style="height: 150px; overflow: hidden;" >
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%"   stop-color="#9E1B19"/>
+                  <stop offset="100%" stop-color="#D22923"/>
+                </linearGradient>
+              </defs>
+            <path d="M-0.85,60.68 C124.43,126.80 254.22,-51.82 500.84,80.42 L500.00,0.00 L0.00,0.00 Z"></path>
+        </svg>
+    </div>
+    
+      
+
+
+
+
+
+
         <!-- Preços -->
         <div class="container-fluid py-5" id="container-price">
             <!-- Titulo planos -->

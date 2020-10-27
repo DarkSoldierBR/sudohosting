@@ -18,18 +18,21 @@
 }
 
 #fundo {
-    height: 100vh;
+
+    height: 23rem;
     padding: 0px;
-    background-color: #FFDFD4;
+    background-image: linear-gradient(to bottom,#3C3532 50%,#9E1B19);
 }
+
+path{
+    fill: url(#gradient)
+   }
 
 /* TESTE */
 
 #getstarted {
     border-radius: 30px;
-    -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    
 }
 
 #row {
@@ -100,12 +103,12 @@ background-color: #B59E96;
 }
 .gradient-text{
     color: #FF9E81;
-    background: -webkit-linear-gradient(left,#FF7B5A,#FF0000,#FF0000,#FF7B5A);
+    background: -webkit-linear-gradient(left,#FF0000,#C4FCFF,#C4FCFF,#FF0000);
     background-size: 1600px 200px;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation-name: animationgradienttitle;
-      -webkit-animation: animationgradienttitle 5s infinite linear;
+    animation: animationgradienttitle 5s infinite linear;
   }
 
   @keyframes animationgradienttitle {
@@ -116,3 +119,7 @@ background-color: #B59E96;
         background-position: 1600px 0;
     }
   }
+.wave{
+    overflow: hidden;
+    background-color: #FFDFD4;
+}
