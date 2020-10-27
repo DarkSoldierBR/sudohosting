@@ -109,7 +109,9 @@ background-color: #B59E96;
     background: -webkit-linear-gradient(right,#8A2387,#E94057,#F27121);
     background-size: 400%;
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
     animation-name: animationgradient;
     animation: animationgradient 8s infinite linear;
   }
