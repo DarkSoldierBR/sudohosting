@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
+
     <!-- CSS only -->
     <link rel="stylesheet" href="../css/auth.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/compiler/bootstrap.css">
@@ -26,7 +26,6 @@
     <div class="container-fluid py-5" id="background">
         <div class="container py-5" id="login-container" style="width: 50em;">
             <div class="col px-5 text-center">
-               
 
                 <!-- Email -->
                 <div class="row my-4">
@@ -34,9 +33,8 @@
                         <p class="my-2 text-center font-weight-bold">Email</p>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <div class="container" id="login-campo">
-                            <input type="password" class="form-control" style="border-width: 0px;">
-
+                        <div class="container login-campo">
+                            <input type="email" class="form-control" style="border:none">
                         </div>
                     </div>
                 </div>
@@ -47,31 +45,19 @@
                         <p class="my-2 text-center font-weight-bold">Senha</p>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <div class="container" id="login-campo">
-                            <input class="form-control" style="border-width: 0px;">
-
+                        <div class="container login-campo">
+                            <input type="password" class="form-control" style="border:none">
                         </div>
                     </div>
                 </div>
-
-                <!-- Idade -->
-                <div class="row my-4">
-                    <div class="col col-lg-1">
-                        <p class="my-2 text-center font-weight-bold">Idade</p>
-                    </div>
-                    <div class="col d-flex justify-content-center">
-                        <div class="container" id="login-campo">
-                            <input class="form-control" style="border-width: 0px;">
-
-                        </div>
-                    </div>
-                </div>
-
-                
                 <div type="button" class="button mx-auto" style="width: 150px;">
                     <p class="text-font my-auto p-2"><strong>Logar</strong></p>
                 </div>
-              
+
+                <p class="mt-4">Não possui uma conta?</p>
+                <a href="register.html">
+                    <p class="text-font">Clique aqui para cadastrar</p>
+                </a>
             </div>
 
 
@@ -80,9 +66,9 @@
 
 
 
-    <!-- Footer --> 
+    <!-- Footer -->
     <iframe src="../common/footer.html"
-     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
 
 </body>

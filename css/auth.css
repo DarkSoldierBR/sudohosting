@@ -5,12 +5,15 @@
     background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A);
     border-radius: 25px;
 }
-#login-campo{
+.login-campo{
     border-radius: 25px;
     border-style: solid;
     background-color: white;
     border-width: 3px;
     border-color: black;
+}
+.login-campo:hover{
+    opacity: 0.9;
 }
 .button{
     background-color: #221E1C;
