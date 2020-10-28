@@ -26,57 +26,56 @@ path{
     background-color: #86360E;
 } */
 
-.getstarted {
+.gradientbutton {
     height: 50px;
     transform: translate(-0%,-0%);
     
     box-sizing: border-box;
     /* background: linear-gradient(90deg,#dd1818, #333333, #dd1818);   */
     /* background-color: #dd1818; */
-    background: linear-gradient(90deg,#DE3F3F,#720E0E,#E92828);
+    background: linear-gradient(90deg,#FF0000,#800000,#FF0000);
     text-align: center;
     background-size: 400%;
     border-radius: 25px;
+    animation: gradientbutton 8s linear infinite;  
     z-index: 1; 
    }
    
-   .getstarted:hover {
-    animation: animate 5s linear infinite;
+   .gradientbutton:hover {
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.7);
    }
    
-   @keyframes animate {
+   @keyframes gradientbutton {
     0% {   
      background-position: 0%;   
     }
 
-    100% {  
-        background-position: 400%;
+    100% {   
+        background-position: 400%;   
        }
-   
+
    }
    
-   .getstarted:before {  
+   .gradientbutton:before {  
     content: '';  
     position: absolute;   
-    top: -10px;   
-    bottom: -10px;   
-    right: -10px;     
-    left: -10px;   
+    top: -5px;   
+    bottom: -5px;   
+    right: -5px;        
+    left: -5px;      
     z-index: -1;   
-    background: linear-gradient(90deg,#DE3F3F,#720E0E,#E92828);
+    background: linear-gradient(90deg,#FF0000,#800000,#FF0000);
     background-size: 400%;   
     border-radius: 40px;  
     filter: blur(20px);   
-    opacity: 0;  
     transition: 0.5s;  
-   }
-   
-   .getstarted:hover:before { 
     filter: blur(20px); 
     opacity: 1;  
     animation: animate 8s linear infinite;  
    }
-
+   
 #row {
     position: absolute;
     margin-left: 15%;
@@ -102,7 +101,7 @@ path{
     background: -webkit-linear-gradient(right,#8E0E00,#1F1C18);
     background-size: 400%;
     animation-name: animationgradient;
-    animation: animationgradient 15s infinite linear;
+    animation: animationgradient 5s infinite linear;
     border-radius: 30px;
     -webkit-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
     -moz-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
