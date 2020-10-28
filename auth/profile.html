@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title>SudoHosting</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <iframe src="../common/header.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+
+    <div class="container-fluid py-5" id="background">
+        <div class="container py-5" id="login-container" style="width: 50em;">
+            <div class="col px-5 text-center">
+
+                 <!-- Nome -->
+                 <div class="row my-4">
+                    <div class="col col-lg-1 ">
+                        <p class="my-2 text-center font-weight-bold">Nome</p>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="container login-campo">
+                            <input type="email" class="form-control" style="border-width: 0px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="row my-4">
+                    <div class="col col-lg-1 ">
+                        <p class="my-2 text-center font-weight-bold">Email</p>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="container login-campo">
+                            <input type="password" class="form-control" style="border-width: 0px;">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senha -->
+                <div class="row my-4">
+                    <div class="col col-lg-1 ">
+                        <p class="my-2 text-center font-weight-bold">Senha</p>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="container login-campo">
+                            <input class="form-control" style="border-width: 0px;">
+
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <!-- CPF -->
+                <div class="row my-4">
+                    <div class="col col-lg-1 ">
+                        <p class="my-2 text-center font-weight-bold">CPF</p>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="container login-campo">
+                            <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');"
+                                style="border-width: 0px;">
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Idade -->
+                 <div class="row my-4">
+                    <div class="col col-lg-3 ">
+                        <p class="my-2 text-center font-weight-bold" style="width: 150px;">Data de nascimento</p>
+                    </div>
+
+                            <!-- <div class="mx-5 text-center login-campo">  -->
+                                <input id="date-input" class="text-center login-campo" type="text" style="width: 130px;">
+                                <!-- datedropper init -->
+                                <script>$('#date-input').dateDropper({
+                                    large:true,
+                                    lang: "pt"
+                                });
+                                
+                                </script> 
+                        <!-- </div> -->
+                </div>
+
+                <div class="row">
+                    <div class="col mx-5">
+                        <div class="button text-center" style="height: 100%;">
+                           <h5 class="text-font">Alterar dados</h5>
+                        
+                    </div>
+                    </div>
+
+                    <div class="col mx-5">
+                        <div class="button text-center" style="height: 100%;">
+                           <h5 class="text-font">Sair</h5>
+                        
+                    </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+        </div>
+
+        <!-- Painel -->
+        <div class=row>
+            <!-- VPS -->
+            <div class="col">
+
+            </div>
+            <!-- Cloud -->
+            <div class="col">
+
+            </div>
+            <!-- Hospedagem -->
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <iframe src="../common/footer.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+
+</body>
