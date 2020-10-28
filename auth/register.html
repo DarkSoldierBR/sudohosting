@@ -12,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="../src/script/datedropper/datedropper.pro.min.js"></script>
 
     <!-- CSS only -->
     <link rel="stylesheet" href="../css/auth.css">
@@ -89,10 +90,17 @@
                     <div class="col col-lg-1 ">
                         <p class="my-2 text-center font-weight-bold">Idade</p>
                     </div>
-               
-                            <input class="mx-3" type="date" min='1930-01-01' max='2000-01-01'>
 
-           
+                            <!-- <div class="mx-5 text-center login-campo">  -->
+                                <input id="date-input" class="mx-3 text-center login-campo" type="text" style="width: 130px;">
+                                <!-- datedropper init -->
+                                <script>$('#date-input').dateDropper({
+                                    large:true,
+                                    lang: "pt"
+                                });
+                                
+                                </script> 
+                        <!-- </div> -->
                 </div>
 
                 <!-- Aluno etec -->

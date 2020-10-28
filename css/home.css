@@ -172,3 +172,6 @@ background-color: #B59E96;
     overflow: hidden;
     background-color: #FFDFD4;
 }
+.datepicker{
+    border-radius: 25px;
+}
