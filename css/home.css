@@ -1,24 +1,13 @@
-.triangle:after {
-    content: ' ';
-    border-top: 35rem solid #221E1C;
-    border-right: 85rem solid transparent;
-    padding: 7em;
-    position: absolute;
-
+.text-font{
+    color: #FFDFD4;
 }
 
-.triangle-vps:after {
-    content: ' ';
-    align-self: end;
-    border-top: 35rem solid #221E1C;
-    border-left: 75rem solid transparent;
-    padding: 15em;
-    position: absolute;
-
+.navbar{
+    background: #685C57;
 }
 
 #fundo {
-    padding: 0px;
+    padding-top: 30px;
     background-image: linear-gradient(to bottom,#3C3532 50%,#9E1B19);
 }
 
