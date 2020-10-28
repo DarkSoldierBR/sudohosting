@@ -1,5 +1,9 @@
 .text-font{
     color: #FFDFD4;
+    font-family: 'Quicksand', sans-serif;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
 }
 
 .navbar{
@@ -174,4 +178,7 @@ background-color: #B59E96;
 }
 .datepicker{
     border-radius: 25px;
+}
+.nav-link:hover{
+    color: #F27121;
 }

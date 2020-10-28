@@ -2,10 +2,14 @@
     background-color: #FFDFD4;
 }
 #login-container{
-    background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A);
+    /* background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A); */
+    background-color: #FF9E81;
     border-radius: 25px;
+    width: 30em;
 }
 .login-campo{
+    font-family: 'Quicksand', sans-serif;
+    height: 40px;
     border-radius: 25px;
     border-style: solid;
     background-color: white;
