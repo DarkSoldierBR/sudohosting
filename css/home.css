@@ -150,6 +150,7 @@ border-radius: 15px;
 background-color: #B59E96;
 }
 .gradient-text{
+    font-family: 'Anton', sans-serif;
     color: #FF9E81;
     background: -webkit-linear-gradient(right,#8A2387,#E94057,#F27121);
     background-size: 400%;
