@@ -9,6 +9,9 @@
 .navbar{
     background: #685C57;
 }
+.nav-item:hover{
+    background-color: #47403c;
+}
 
 #fundo {
     padding-top: 30px;
