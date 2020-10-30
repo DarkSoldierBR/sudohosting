@@ -21,18 +21,7 @@
 path{
     fill: url(#gradient)
    }
-
-/* TESTE */
-
-/* .getstarted {
-    border-radius: 30px;
-    background-color: #FF0000;
-    
-}
-.getstarted:hover{
-    background-color: #86360E;
-} */
-
+   
 .gradientbutton {
     height: 50px;
     transform: translate(-0%,-0%);
@@ -44,6 +33,7 @@ path{
     text-align: center;
     background-size: 400%;
     border-radius: 25px;
+    transition-duration: 0.7s;
     animation: gradientbutton 8s linear infinite;  
     z-index: 1; 
    }
@@ -78,7 +68,6 @@ path{
     border-radius: 40px;  
     filter: blur(20px);   
     transition: 0.5s;  
-    filter: blur(20px); 
     opacity: 1;  
     animation: animate 8s linear infinite;  
    }
@@ -115,13 +104,21 @@ path{
     box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
 
 }
-#price-plans-background{
-    background-color: #FF9E81;
+.price-plans-background{
+    background-color: #FF9E81; 
     border-radius: 20px;
     -webkit-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
--moz-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
+    -moz-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
+    box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
+
 }
+.price-plans-background:hover{
+    transition-duration: 0.7s;
+    -webkit-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.70);
+    -moz-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.70);
+    box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.70);
+}
+
 #price-plan-title{
     background-color: #FF7B5A;
     border-radius: 17px;
