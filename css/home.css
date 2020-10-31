@@ -13,6 +13,11 @@
     background-color: #47403c;
 }
 
+@font-face {
+    font-family: Fabada;
+    src: url(/src/font/Fabada-regular.ttf);
+  }
+
 #fundo {
     padding-top: 30px;
     background-image: linear-gradient(to bottom,#3C3532 50%,#9E1B19);

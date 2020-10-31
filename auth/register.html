@@ -33,28 +33,28 @@
 
 
     <div class="container-fluid py-5" id="background">
-        <div class="container py-5" id="login-container" style="width: 50em;">
+        <div class="container py-5" id="login-container">
             <div class="col px-5 text-center">
                 <!-- Nome -->
                 <div class="row my-4">
-                    <div class="col col-lg-1 ">
-                        <p class="my-2 text-center font-weight-bold">Nome</p>
+                    <div class="col-2">
+                        <p class="my-2 text-center text-font font-weight-bold" style="font-size: 15pt">Nome</p>
                     </div>
-                    <div class="col d-flex justify-content-center">
+                    <div class="col">
                         <div class="container login-campo">
-                            <input type="email" class="form-control" style="border-width: 0px;">
+                            <input type="email" class="form-control"  style="border-width: 0px; height: 33px;">
                         </div>
                     </div>
                 </div>
 
                 <!-- Email -->
                 <div class="row my-4">
-                    <div class="col col-lg-1 ">
-                        <p class="my-2 text-center font-weight-bold">Email</p>
+                    <div class="col-2">
+                        <p class="my-2 text-center text-font font-weight-bold" style="font-size: 15pt">Email</p>
                     </div>
-                    <div class="col d-flex justify-content-center">
+                    <div class="col">
                         <div class="container login-campo">
-                            <input type="password" class="form-control" style="border-width: 0px;">
+                            <input type="password" class="form-control"  style="border-width: 0px; height: 33px;">
 
                         </div>
                     </div>
@@ -62,12 +62,12 @@
 
                 <!-- Senha -->
                 <div class="row my-4">
-                    <div class="col col-lg-1 ">
-                        <p class="my-2 text-center font-weight-bold">Senha</p>
+                    <div class="col-2">
+                        <p class="my-2 text-center text-font font-weight-bold" style="font-size: 15pt">Senha</p>
                     </div>
-                    <div class="col d-flex justify-content-center">
+                    <div class="col">
                         <div class="container login-campo">
-                            <input class="form-control" style="border-width: 0px;">
+                            <input class="form-control"  style="border-width: 0px; height: 33px;">
 
                         </div>
                     </div>
@@ -77,33 +77,32 @@
 
                 <!-- CPF -->
                 <div class="row my-4">
-                    <div class="col col-lg-1 ">
-                        <p class="my-2 text-center font-weight-bold">CPF</p>
+                    <div class="col-2">
+                        <p class="my-2 text-center text-font font-weight-bold" style="font-size: 15pt">CPF</p>
                     </div>
-                    <div class="col d-flex justify-content-center">
+                    <div class="col">
                         <div class="container login-campo">
                             <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');"
-                                style="border-width: 0px;">
+                                 style="border-width: 0px; height: 33px;">
                         </div>
                     </div>
                 </div>
 
-                 <!-- Idade -->
-                 <div class="row my-4">
-                    <div class="col col-lg-3 ">
-                        <p class="my-2 text-center font-weight-bold" style="width: 150px;">Data de nascimento</p>
+                  <!-- Data de Nascimento -->
+                <div class="row my-4 justify-content-between">
+                    <div class="col">
+                        <p class="my-2 font-weight-bold text-font text-left nowrap" style="font-size: 15pt">Data de nascimento</p>
                     </div>
+                    <div class="col">
 
-                            <!-- <div class="mx-5 text-center login-campo">  -->
-                                <input id="date-input" class="text-center login-campo" type="text" style="width: 130px;">
-                                <!-- datedropper init -->
-                                <script>$('#date-input').dateDropper({
-                                    large:true,
-                                    lang: "pt"
-                                });
-                                
-                                </script> 
-                        <!-- </div> -->
+                        <input id="date-input" class="login-campo text-center" type="text" style="width: 130px;">
+                        <!-- datedropper init -->
+                        <script>$('#date-input').dateDropper({
+                                large: true,
+                                lang: "pt"
+                            });
+                        </script>
+                    </div>
                 </div>
 
 
@@ -113,11 +112,11 @@
                 <!-- Aluno etec -->
                 <div class="row my-4">
                     <div class="col col-lg-3">
-                        <lead class="font-weight-bold" style="width: 150px;">Aluno da ETEC</lead>
+                        <lead class="font-weight-bold text-font" style="font-size: 15pt">Aluno da ETEC</lead>
                     </div>
-                    <div class="col d-flex justify-content-center">
+                    <div class="col">
                         <div class="container login-campo">
-                            <input class="form-control" style="border-width: 0px;">
+                            <input class="form-control"  style="border-width: 0px; height: 33px;">
                         </div>
                     </div>
                 </div>
