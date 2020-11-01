@@ -113,8 +113,6 @@ html {
   
 #container-price {
     background-color: #FFDFD4;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
 }
 #footer-services-backgroud{
     background-image: linear-gradient(#3C3532,#685C57);
