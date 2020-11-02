@@ -4,8 +4,8 @@
     background-color: #FFDFD4;
 }
 #login-container{
-    /* background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A); */
-    background-color: #685C57;
+    background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A);
+    /* background-color: #685C57; */
 
     border-radius: 25px;
     width: 30em;
