@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
@@ -19,10 +18,8 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/home.css">
 
-      <!-- Fonts -->
-      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet"> 
-     
-
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 
 </head>
 
@@ -30,7 +27,6 @@
     <!-- Header -->
     <iframe src="../common/header.html"
         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-
 
     <div class="container-fluid py-5" id="background">
         <div class="container py-5" id="login-container">
@@ -43,7 +39,7 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input type="email" class="form-control"  style="border-width: 0px; height: 33px;">
+                            <input type="email" class="form-control" style="border-width: 0px; height: 33px;">
                         </div>
                     </div>
                 </div>
@@ -55,7 +51,7 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input type="password" class="form-control"  style="border-width: 0px; height: 33px;">
+                            <input type="password" class="form-control" style="border-width: 0px; height: 33px;">
 
                         </div>
                     </div>
@@ -68,13 +64,11 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input class="form-control"  style="border-width: 0px; height: 33px;">
+                            <input class="form-control" style="border-width: 0px; height: 33px;">
 
                         </div>
                     </div>
                 </div>
-
-               
 
                 <!-- CPF -->
                 <div class="row my-4">
@@ -84,19 +78,20 @@
                     <div class="col">
                         <div class="container login-campo">
                             <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');"
-                                 style="border-width: 0px; height: 33px;">
+                                style="border-width: 0px; height: 33px;">
                         </div>
                     </div>
                 </div>
 
-                  <!-- Data de Nascimento -->
-                <div class="row my-4 justify-content-between">
-                    <div class="col">
-                        <p class="my-2 font-weight-bold text-font text-left nowrap" style="font-size: 15pt">Data de nascimento</p>
+                <!-- Data de Nascimento -->
+                <div class="row justify-content-between my-4">
+                    <div class="col-">
+                        <p class="font-weight-bold text-font text-nowrap" style="font-size: 15pt;margin-left: 15px;">
+                            Data de nascimento</p>
                     </div>
-                    <div class="col">
+                    <div class="col-sm">
 
-                        <input id="date-input" class="login-campo text-center" type="text" style="width: 130px;">
+                        <input id="date-input" class="login-campo text-center" type="text" style="width: 150px;">
                         <!-- datedropper init -->
                         <script>$('#date-input').dateDropper({
                                 large: true,
@@ -106,24 +101,18 @@
                     </div>
                 </div>
 
-
-                <!-- ####################
-                   Precisa de fix
-                #################### -->
                 <!-- Aluno etec -->
-                <div class="row my-4">
-                    <div class="col col-lg-3">
-                        <lead class="font-weight-bold text-font" style="font-size: 15pt">Aluno da ETEC</lead>
+                <div class="row justify-content-between my-4">
+                    <div class="col-">
+                        <p class="font-weight-bold text-font text-nowrap" style="font-size: 15pt;margin-left: 15px;">
+                            Aluno da ETEC</p>
                     </div>
-                    <div class="col">
+                    <div class="col-sm">
                         <div class="container login-campo">
-                            <input class="form-control"  style="border-width: 0px; height: 33px;">
+                            <input class="form-control" style="border-width: 0px; height: 33px;">
                         </div>
                     </div>
                 </div>
-
-
-
 
                 <!-- Botão -->
                 <button type="button" class="btn button-black" style="width: 30vh;">
@@ -133,21 +122,16 @@
                     <lead>Estudantes da ETEC conseguem hospedagem grátis para o TCC.</lead>
                 </div>
                 <p>Já possui uma conta?</p>
-                <a href="register.html">
+                <a href="login.html">
                     <p class="text-font">Clique aqui para entrar</p>
                 </a>
             </div>
-
-
         </div>
     </div>
-
-
 
     <!-- Footer -->
     <iframe src="
     ../common/footer.html"
         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-
 
 </body>
