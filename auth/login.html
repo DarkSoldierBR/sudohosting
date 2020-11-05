@@ -27,32 +27,44 @@
             <h2 class="text-center text-font quicksand">Acesse sua conta</h2>
             <div class="col px-5 text-center my-4">
 
-                <!-- Email -->
-                <div class="row my-4">
-                    <div class="col-2">
-                        <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Email</p>
-                    </div>
-                    <div class="col">
-                        <div class="container login-campo">
-                            <input type="email" class="form-control" style="border-width: 0px; height: 33px;">
+                 <!-- Email -->
+
+                 <div class="form-group">
+                    <div class="row my-4">
+
+                        <div class="col-2">
+                            <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Email</p>
+                        </div>
+                        <div class="col">
+                            <div class="container login-campo">
+                                <input type="email" name="email" class="form-control"
+                                    style="border-width: 0px; height: 33px;">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Senha -->
-                <div class="row my-4">
-                    <div class="col-2">
-                        <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Senha</p>
-                    </div>
-                    <div class="col">
-                        <div class="container login-campo">
-                            <input type="password" class="form-control" style="border-width: 0px; height: 33px;">
+
+                <div class="form-group">
+                    <div class="row my-4">
+                        <div class="col-2">
+                            <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Senha</p>
+                        </div>
+                        <div class="col">
+                            <div class="container login-campo">
+                                <input type="password" name="senha" class="form-control"
+                                    style="border-width: 0px; height: 33px;">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn button-black" style="width: 30vh;">
-                    <h5 class="text-font my-auto p"><strong>Entrar</strong></h5>
-                </button>
+
+                <input type="submit" value="Entrar" class="btn button-black" style="width: 30vh;">
+                <h5 class="text-font my-auto p"><strong>Cadastrar</strong></h5>
+            </input>
+
+                <!-- Não possui conta -->
                 <p class="mt-4 text-font">Não possui uma conta?</p>
                 <a href="register.html">
                     <p class="text-font">Clique aqui para cadastrar</p>
