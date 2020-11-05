@@ -15,15 +15,33 @@
   $senha = mysqli_real_escape_string($con,$_POST['senha']);
 
   // Validação do usuário/senha digitados
-  $sql = "SELECT `usu_nome` FROM `tbl_usuarios` WHERE (`usu_email` = '".$usuario ."')";
+  $sql = "SELECT `usu_id`,`usu_nome`,`usu_nivel` FROM `tbl_usuarios` WHERE (`usu_email` = '".$usuario ."') AND (`usu_senha` = '". sha1($senha) ."')";
   $query = mysqli_query($con,$sql);
   
   if (mysqli_num_rows($query) != 1) {
       // Mensagem de erro quando os dados são inválidos e/ou o usuário não foi encontrado
-      echo "Login inválido!"; exit;
+    //   echo "Login inválido!"; exit;
+    if (!isset($_SESSION)) session_start();
+
+      // aqui voce manda pra session invalido o error que deu no request e redireciona pra index de login
+      $_SESSION["invalido"] = 'true';
+      header("location: /auth/login.php");
   } else {
-      // Salva os dados encontados na variável $resultado
+      // Salva os dados encontrados na variável $resultado
       $resultado = mysqli_fetch_assoc($query);
+
+      // Se a sessão não existir, inicia uma
+      if (!isset($_SESSION)) session_start();
+
+     
+
+      // Salva os dados encontrados na sessão
+      $_SESSION['UsuarioID'] = $resultado['usu_id'];
+      $_SESSION['UsuarioNome'] = $resultado['usu_nome'];
+      $_SESSION['UsuarioNivel'] = $resultado['usu_nivel'];
+
+      // Redireciona o visitante
+      header("location: /auth/user/profile.php"); exit;
   }
 
   ?>

@@ -1,3 +1,17 @@
+<?php
+
+  // A sessão precisa ser iniciada em cada página diferente
+  if (!isset($_SESSION)) session_start();
+
+  // Verifica se não há a variável da sessão que identifica o usuário
+  if (isset($_SESSION['UsuarioID'])) {
+      // Destrói a sessão por segurança
+      session_destroy();
+      // Redireciona o visitante de volta pro login
+      header("Location: /auth/user/profile.php"); exit;
+  }
+  ?>
+
 <html>
 
 <head>
@@ -26,6 +40,10 @@
         <div class="container py-5" id="login-container">
             <h2 class="text-center text-font quicksand">Acesse sua conta</h2>
             <div class="col px-5 text-center my-4">
+
+
+                <form action="../controller/login.php" method="post">
+                    <fieldset>
 
                  <!-- Email -->
 
@@ -60,9 +78,24 @@
                     </div>
                 </div>
 
-                <input type="submit" value="Entrar" class="btn button-black" style="width: 30vh;">
-                <h5 class="text-font my-auto p"><strong>Cadastrar</strong></h5>
-            </input>
+                <?php
+                if(isset($_SESSION["invalido"]) && $_SESSION["invalido"]=='true'){
+                          $_SESSION["invalido"] = 'false';
+                        
+                          echo '<span><div class="container text-center text-font p-1 quicksand my-4" style="background-color: #685C57; border-radius: 25px;"><lead>Email ou senha invalidos, verifique e tente novamente.</lead></div></span></span>';
+                }
+                ?>
+
+                <button type="submit" value="Entrar" class="btn button-black" style="width: 30vh;">
+                    <h5 class="text-font my-auto p"><strong>Entrar</strong></h5>
+                </button>
+
+            </fieldset>
+        </form>
+
+            <!-- <button type="submit" value="Entrar" class="btn button-black" style="width: 30vh;">
+                <h5 class="text-font my-auto p"><strong>Entrar</strong></h5>
+            </button> -->
 
                 <!-- Não possui conta -->
                 <p class="mt-4 text-font">Não possui uma conta?</p>
@@ -78,3 +111,6 @@
         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
 </body>
+
+
+</html>
