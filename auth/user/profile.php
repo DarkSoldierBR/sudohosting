@@ -109,11 +109,15 @@
                             <lead class="font-weight-bold p-3 text-font" style="font-size: 13pt;">Alterar dados</lead>
                         </a>
                          </div>
-                         <div class="text-center my-4">
-                            <a class="btn button-black p-2">
+
+                         <form action="../../controller/logout.php" method="post">
+                         <button type="submit" value="Logout" class="text-center my-4 btn button-black p-2">
+                          
                                 <lead class="font-weight-bold p-3 text-font" style="font-size: 13pt;">Sair</lead>
-                            </a>
-                             </div>
+                         
+                             </button>
+
+                        </form>
                 </div>
 
             </div>

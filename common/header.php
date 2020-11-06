@@ -47,7 +47,7 @@
                     </li>';
                     }else{
                         echo '<li class="nav-item text-center">
-                        <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD4;" href="/auth/user/profile.php">Painel</a>
+                        <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD9;" href="/auth/user/profile.php">Painel</a>
                     </li>';
                     }
                     ?>
