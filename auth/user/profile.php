@@ -26,7 +26,7 @@
 
 <body>
     <!-- Header -->
-    <iframe src="/../common/header.html"
+    <iframe src="/../common/header.php"
         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
     <div class="container-fluid py-5" id="background">
@@ -135,6 +135,10 @@
                 <img src="/src/img/cloud.png" class="img" height="200px" alt="Cloud Image">
                 <h4><strong>Clique para acessar a Cloud</strong></h4>
                 <div class="button-red my-4">
+                    <h5 class="text-font p-2"><strong>Acessar</strong></h5>
+                </div>
+
+                <div class="my-4">
                     <h5 class="text-font p-2"><strong>Acessar</strong></h5>
                 </div>
 

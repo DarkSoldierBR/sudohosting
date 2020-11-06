@@ -21,7 +21,7 @@
 
 <body>
     <!-- Header -->
-    <iframe src="../common/header.html"
+    <iframe src="/../common/header.php"
         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
     <div class="container-fluid py-5" id="background">

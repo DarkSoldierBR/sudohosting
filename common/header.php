@@ -34,9 +34,26 @@
                     <li class="nav-item text-center">
                         <a class="nav-link" style="font-size: 18pt; width: 10rem; color: #FFDFD4;" href="/pages/hosting.html">Hospedagem</a>
                     </li>
-                    <li class="nav-item text-center">
+                    
+                    
+                    <?php
+                    if (!isset($_SESSION)) session_start();
+
+                    // Verifica se não há a variável da sessão que identifica o usuário
+                    if (!isset($_SESSION['UsuarioID'])) {
+
+                        echo '<li class="nav-item text-center">
                         <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD4;" href="/auth/login.php">Entrar</a>
-                    </li>
+                    </li>';
+                    }else{
+                        echo '<li class="nav-item text-center">
+                        <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD4;" href="/auth/user/profile.php">Painel</a>
+                    </li>';
+                    }
+                    ?>
+
+
+                    
 
                 </ul>
             </div>
