@@ -1,16 +1,4 @@
-<?php
 
-  // A sessão precisa ser iniciada em cada página diferente
-  if (!isset($_SESSION)) session_start();
-
-  // Verifica se não há a variável da sessão que identifica o usuário
-  if (isset($_SESSION['UsuarioID'])) {
-      // Destrói a sessão por segurança
-      session_destroy();
-      // Redireciona o visitante de volta pro login
-      header("Location: /auth/user/profile.php"); exit;
-  }
-  ?>
 
 <html>
 
@@ -99,7 +87,7 @@
 
                 <!-- Não possui conta -->
                 <p class="mt-4 text-font">Não possui uma conta?</p>
-                <a href="register.html">
+                <a href="register.php">
                     <p class="text-font">Clique aqui para cadastrar</p>
                 </a>
             </div>

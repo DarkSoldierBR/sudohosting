@@ -1,17 +1,4 @@
-<?php
-
-  // A sessão precisa ser iniciada em cada página diferente
-  if (!isset($_SESSION)) session_start();
-
-  // Verifica se não há a variável da sessão que identifica o usuário
-  if (!isset($_SESSION['UsuarioID'])) {
-      // Destrói a sessão por segurança
-      session_destroy();
-      // Redireciona o visitante de volta pro login
-      header("Location: /auth/login.php"); exit;
-  }
-
-  ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/controller/check.php'); ?>
 
 <html>
 
@@ -118,7 +105,7 @@
 
                 <div class="row justify-content-between">
                     <div class="text-center my-4">
-                        <a class="btn button-black p-2" href="/auth/user/update_profile.html">
+                        <a class="btn button-black p-2" href="/auth/user/update_profile.php">
                             <lead class="font-weight-bold p-3 text-font" style="font-size: 13pt;">Alterar dados</lead>
                         </a>
                          </div>

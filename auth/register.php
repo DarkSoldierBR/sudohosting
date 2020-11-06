@@ -121,7 +121,7 @@
                     <lead>Estudantes da ETEC conseguem hospedagem grátis para o TCC.</lead>
                 </div>
                 <p>Já possui uma conta?</p>
-                <a href="login.html">
+                <a href="login.php">
                     <p class="text-font">Clique aqui para entrar</p>
                 </a>
             </div>

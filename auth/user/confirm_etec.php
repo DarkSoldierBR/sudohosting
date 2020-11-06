@@ -1,3 +1,5 @@
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/controller/check.php'); ?>
+
 <html>
 
 <head>
@@ -31,25 +33,33 @@
         <div class="container py-5" id="login-container">
             <div class="col px-5">
 
-                <h4 class="text-font m-4">
+                <h5 class="text-font m-4">
                     <p>
-                        Ao clicar em solicitar será enviado para o seu email
-                        um boleto para que você possa pagar da maneira
-                        que preferir.
+                        Se você realmente participa da ETEC terá 
+                        que solicitar um comprovante emitido pela escola,
+                        para poder nos mandar. 
                     </p>
                     <p>
-                        Após a confirmação do pagamento, o que pode
-                        demorar até um pouco mais de um dia,
-                        vai ser disponibilizado o serviço pelo qual você pagou.
-                    </p>
-                </h4>
+                        Essa comprovação é
+                        necessária para que possamos identificar quem
+                        realmente é estudante da intituição.
+                </p></h5>
+
+                <div class="row">
+                    <div class="col-4">
+                    <h5 class="text-font">Comprovante:</h5>
+                </div>
+                    <div class="col">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1" placeholder="">
+                </div>
+                </div>
 
                 <div class="row justify-content-between m-4">
                     <button type="button" class="btn button-black">
                         <lead><strong class="text-font p-4" style="font-size: 15pt;">Voltar</strong></lead>
                     </button>
                     <button type="button" class="btn button-black">
-                        <lead><strong class="text-font p-4" style="font-size: 15pt;">Solicitar</strong></lead>
+                        <lead><strong class="text-font p-4" style="font-size: 15pt;">Enviar</strong></lead>
                     </button>
                 </div>
 

@@ -3,7 +3,6 @@
   // Verifica se houve POST e se o usuário ou a senha é(são) vazio(s)
   if (!empty($_POST) AND (empty($_POST['email']) OR empty($_POST['senha']))) {
       echo "Login inválido! Senha ta vazio"; exit;
-
   }
 
   // Tenta se conectar ao servidor MySQL
@@ -20,10 +19,8 @@
   
   if (mysqli_num_rows($query) != 1) {
       // Mensagem de erro quando os dados são inválidos e/ou o usuário não foi encontrado
-    //   echo "Login inválido!"; exit;
     if (!isset($_SESSION)) session_start();
-
-      // aqui voce manda pra session invalido o error que deu no request e redireciona pra index de login
+      // Invalida a sessão e manda pro login.php
       $_SESSION["invalido"] = 'true';
       header("location: /auth/login.php");
   } else {
