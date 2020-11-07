@@ -1,9 +1,8 @@
-
-
 <html>
-
 <head>
     <title>SudoHosting</title>
+    <link rel="shortut icon" href="/src/img/favicon.ico" title="GitHub">
+
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -28,45 +27,43 @@
         <div class="container py-5" id="login-container">
             <h2 class="text-center text-font quicksand">Acesse sua conta</h2>
             <div class="col px-5 text-center my-4">
-
-
                 <form action="../controller/login.php" method="post">
                     <fieldset>
 
-                 <!-- Email -->
+                        <!-- Email -->
 
-                 <div class="form-group">
-                    <div class="row my-4">
+                        <div class="form-group">
+                            <div class="row my-4">
 
-                        <div class="col-2">
-                            <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Email</p>
-                        </div>
-                        <div class="col">
-                            <div class="container login-campo">
-                                <input type="email" name="email" class="form-control"
-                                    style="border-width: 0px; height: 33px;">
+                                <div class="col-2">
+                                    <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Email</p>
+                                </div>
+                                <div class="col">
+                                    <div class="container login-campo">
+                                        <input type="email" name="email" class="form-control"
+                                            style="border-width: 0px; height: 33px;">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Senha -->
+                        <!-- Senha -->
 
-                <div class="form-group">
-                    <div class="row my-4">
-                        <div class="col-2">
-                            <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Senha</p>
-                        </div>
-                        <div class="col">
-                            <div class="container login-campo">
-                                <input type="password" name="senha" class="form-control"
-                                    style="border-width: 0px; height: 33px;">
+                        <div class="form-group">
+                            <div class="row my-4">
+                                <div class="col-2">
+                                    <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Senha</p>
+                                </div>
+                                <div class="col">
+                                    <div class="container login-campo">
+                                        <input type="password" name="senha" class="form-control"
+                                            style="border-width: 0px; height: 33px;">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <?php
+                        <?php
                 if(isset($_SESSION["invalido"]) && $_SESSION["invalido"]=='true'){
                           $_SESSION["invalido"] = 'false';
                         
@@ -74,16 +71,12 @@
                 }
                 ?>
 
-                <button type="submit" value="Entrar" class="btn button-black" style="width: 30vh;">
-                    <h5 class="text-font my-auto p"><strong>Entrar</strong></h5>
-                </button>
+                        <button type="submit" value="Entrar" class="btn button-black" style="width: 30vh;">
+                            <h5 class="text-font my-auto p"><strong>Entrar</strong></h5>
+                        </button>
 
-            </fieldset>
-        </form>
-
-            <!-- <button type="submit" value="Entrar" class="btn button-black" style="width: 30vh;">
-                <h5 class="text-font my-auto p"><strong>Entrar</strong></h5>
-            </button> -->
+                    </fieldset>
+                </form>
 
                 <!-- Não possui conta -->
                 <p class="mt-4 text-font">Não possui uma conta?</p>
@@ -99,6 +92,5 @@
         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
 </body>
-
 
 </html>
