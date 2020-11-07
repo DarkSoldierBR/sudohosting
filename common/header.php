@@ -42,7 +42,7 @@
                     // Verifica se não há a variável da sessão que identifica o usuário
                     if (!isset($_SESSION['UsuarioID'])) {
 
-                        echo '<li class="nav-item text-center">
+                        echo '<li class="nav-item-special text-center">
                         <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD4;" href="/auth/login.php">Entrar</a>
                     </li>';
                     }else{
