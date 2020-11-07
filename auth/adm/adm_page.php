@@ -37,10 +37,10 @@
                     <table class="table table-striped my-3">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Usuario</th>
+                                <th scope="col">Email</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -65,21 +65,17 @@
                         </tbody>
                     </table>
                 </div>
-
-
                 <div>
                     <form action="../../controller/logout.php" method="post">
                         <button type="submit" value="Logout" class="text-center my-4 btn button-black p-2">
 
                             <lead class="font-weight-bold p-3 text-font" style="font-size: 13pt;">Sair</lead>
-
                         </button>
-
                     </form>
                 </div>
-
             </div>
         </div>
+    </div>
 
 
         <!-- Footer -->
