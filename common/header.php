@@ -26,34 +26,43 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item text-center">
-                        <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD4;" href="/pages/vps.html">VPS</a>
+                        <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD4;"
+                            href="/pages/vps.html">VPS</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD4;" href="/pages/cloud.html">Cloud</a>
+                        <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD4;"
+                            href="/pages/cloud.html">Cloud</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link" style="font-size: 18pt; width: 10rem; color: #FFDFD4;" href="/pages/hosting.html">Hospedagem</a>
+                        <a class="nav-link" style="font-size: 18pt; width: 10rem; color: #FFDFD4;"
+                            href="/pages/hosting.html">Hospedagem</a>
                     </li>
-                    
-                    
+
+
                     <?php
                     if (!isset($_SESSION)) session_start();
 
                     // Verifica se não há a variável da sessão que identifica o usuário
                     if (!isset($_SESSION['UsuarioID'])) {
 
-                        echo '<li class="nav-item-special text-center">
+                        echo '
+                        <div style="background-color: #FF0000;"> 
+                        <li class="nav-item text-center">
                         <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD4;" href="/auth/login.php">Entrar</a>
-                    </li>';
+                    </li>
+                     </div>';
                     }else{
-                        echo '<li class="nav-item text-center">
+                        echo '
+                        <div style="background-color: #FF0000;">
+                        <li class="nav-item text-center">
                         <a class="nav-link" style="font-size: 18pt; width: 5rem; color: #FFDFD9;" href="/auth/user/profile.php">Painel</a>
-                    </li>';
+                    </li>
+                    </div>';
                     }
                     ?>
 
 
-                    
+
 
                 </ul>
             </div>
