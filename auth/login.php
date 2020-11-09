@@ -1,3 +1,9 @@
+<?php
+
+  // A sessão precisa ser iniciada em cada página diferente
+  if (!isset($_SESSION)) session_start();
+?>
+
 <html>
 <head>
     <title>SudoHosting</title>
@@ -56,7 +62,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="container login-campo">
-                                        <input type="password" name="senha" class="form-control"
+                                        <input type="password" name="password" class="form-control"
                                             style="border-width: 0px; height: 33px;">
                                     </div>
                                 </div>
@@ -71,7 +77,7 @@
                 }
                 ?>
 
-                        <button type="submit" value="Entrar" class="btn button-black" style="width: 30vh;">
+                        <button type="submit" value="btn-login" class="btn button-black" style="width: 30vh;">
                             <h5 class="text-font my-auto p"><strong>Entrar</strong></h5>
                         </button>
 
@@ -79,7 +85,9 @@
                 </form>
 
                 <!-- Não possui conta -->
-                <p class="mt-4 text-font">Não possui uma conta?</p>
+                <a href="reset_password.php">
+                <p class="mt-4 text-font">Esqueci a senha</p>
+                </a>
                 <a href="register.php">
                     <p class="text-font">Clique aqui para cadastrar</p>
                 </a>

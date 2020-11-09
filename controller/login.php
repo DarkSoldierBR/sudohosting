@@ -1,8 +1,11 @@
 <?php
 
   // Verifica se houve POST e se o usuário ou a senha é(são) vazio(s)
-  if (!empty($_POST) AND (empty($_POST['email']) OR empty($_POST['senha']))) {
-      echo "Login inválido! Senha ta vazio"; exit;
+  if (!empty($_POST) AND (empty($_POST['email']) OR empty($_POST['password']))) {
+    if (!isset($_SESSION)) session_start();
+    // Invalida a sessão e manda pro login.php
+    $_SESSION["invalido"] = 'true';
+    header("location: /auth/login.php");
   }
 
   // Tenta se conectar ao servidor MySQL
@@ -11,10 +14,10 @@
   $con = mysqli_connect("localhost", "root", "", "test");
 
   $usuario = mysqli_real_escape_string($con,$_POST['email']);
-  $senha = mysqli_real_escape_string($con,$_POST['senha']);
+  $password = mysqli_real_escape_string($con,$_POST['password']);
 
   // Validação do usuário/senha digitados
-  $sql = "SELECT `usu_id`,`usu_nome`,`usu_nivel` FROM `tbl_usuarios` WHERE (`usu_email` = '".$usuario ."') AND (`usu_senha` = '". sha1($senha) ."')";
+  $sql = "SELECT `usu_id`,`usu_nome`,`usu_nivel` FROM `tbl_usuario` WHERE (`usu_email` = '".$usuario ."') AND (`usu_senha` = '". sha1($password) ."')";
   $query = mysqli_query($con,$sql);
   
   if (mysqli_num_rows($query) != 1) {
