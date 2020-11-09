@@ -11,19 +11,12 @@
 	$result_usuario = "INSERT INTO usuarios(nome, email, senha, data, cpf, requisito) VALUES ('$nome_usuario','$email_usuario', '$senha_usuario', '$data_usuario', '$cpf_usuario', '$requisito_usuario')";
 	$resultado_usuario = mysqli_query($conn, $result_usuario);
 	
-	if(mysqli_affected_rows($conn) != 0){
-				echo "
-					<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/SudoHost/register.php'>
-					<script type=\"text/javascript\">
-						alert(\"Usuario cadastrado com Sucesso.\");
-					</script>
-				";	
-			}else{
-				echo "
-					<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/SudoHost/register.php'>
-					<script type=\"text/javascript\">
-						alert(\"O Usuario não foi cadastrado com Sucesso.\");
-					</script>
-				";	
-			}
+      // Redireciona o visitante
+      if($_SESSION['UsuarioNivel']==1){
+        header("location: /auth/user/profile.php"); exit;
+      } elseif ($_SESSION['UsuarioNivel']==2){
+        header("location: /auth/adm/adm_page.php"); exit;
+      } else{ 
+        require_once($_SERVER['DOCUMENT_ROOT'].'/controller/logout.php'); 
+      }
 ?>
