@@ -1,4 +1,6 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'/controller/check.php'); ?>
+<?php 
+// require_once($_SERVER['DOCUMENT_ROOT'].'/controller/check.php'); 
+?>
 
 <html>
 
