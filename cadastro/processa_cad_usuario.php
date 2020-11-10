@@ -5,7 +5,7 @@
 	$senha_usuario = $_POST['txt_senha_usuario'];
 	$data_usuario = $_POST['int_data_usuario'];
 	$cpf_usuario = $_POST['int_cpf_usuario'];
-	$requisito_usuario = $_POST['txt_requisito_usuario']; //Requisito é se o aluno participa ou não da ETEC
+	$requisito_usuario = $_POST['boolean_requisito_usuario']; //Requisito é se o aluno participa ou não da ETEC
 	//echo "$nome_usuario - $email_usuario";
 	
 	$result_usuario = "INSERT INTO usuarios(nome, email, senha, data, cpf, requisito) VALUES ('$nome_usuario','$email_usuario', '$senha_usuario', '$data_usuario', '$cpf_usuario', '$requisito_usuario')";
