@@ -40,7 +40,7 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input type="email" class="form-control" style="border-width: 0px; height: 33px;">
+                            <input type="email" class="form-control" name="nome" style="border-width: 0px; height: 33px;">
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input type="password" class="form-control" style="border-width: 0px; height: 33px;">
+                            <input type="password" class="form-control" name="email" style="border-width: 0px; height: 33px;">
 
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input class="form-control" style="border-width: 0px; height: 33px;">
+                            <input class="form-control" name="senha" style="border-width: 0px; height: 33px;">
 
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');"
+                            <input type="text" class="form-control" name="cpf" onkeypress="$(this).mask('000.000.000-00');"
                                 style="border-width: 0px; height: 33px;">
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                             Data de nascimento</p>
                     </div>
                     <div class="col-sm">
-                        <input id="date-input" class="login-campo text-center" type="text" style="width: 150px;">
+                        <input id="date-input" class="login-campo text-center" name="dtnsc" type="text" style="width: 150px;">
                         <!-- datedropper init -->
                         <script>$('#date-input').dateDropper({
                                 large: true,
@@ -109,7 +109,7 @@
                     </div>
                     <div class="col-sm">
                         <div class="container login-campo">
-                            <input class="form-control" style="border-width: 0px; height: 33px;">
+                            <input class="form-control" name="requisito" style="border-width: 0px; height: 33px;">
                         </div>
                     </div>
                 </div>
