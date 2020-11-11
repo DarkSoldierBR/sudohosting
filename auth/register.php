@@ -52,7 +52,7 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input type="password" class="form-control" name="email" style="border-width: 0px; height: 33px;">
+                            <input type="text" class="form-control" name="email" style="border-width: 0px; height: 33px;">
 
                         </div>
                     </div>
