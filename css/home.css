@@ -208,3 +208,7 @@ background-color: #B59E96;
 .nav-link:hover{
     color: #F27121;
 }
+
+.custom_toggle{
+    color: black;
+}

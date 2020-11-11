@@ -13,8 +13,8 @@
   // Tenta se conectar a um banco de dados MySQL
   $con = mysqli_connect("localhost", "root", "", "test");
 
-  $usuario = mysqli_real_escape_string($con,$_POST['email']);
-  $password = mysqli_real_escape_string($con,$_POST['password']);
+  $usuario = $_POST['email'];
+  $password = $_POST['password'];
 
   // Validação do usuário/senha digitados
   $sql = "SELECT `usu_id`,`usu_nome`,`usu_nivel` FROM `tbl_usuario` WHERE (`usu_email` = '".$usuario ."') AND (`usu_senha` = '". sha1($password) ."')";
