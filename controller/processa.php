@@ -2,12 +2,12 @@
 
 include_once("conexao.php");
 
-$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_EMAIL);
-$cpf = filter_input(INPUT_POST, 'cpf', FILTER_SANITIZE_EMAIL);
-$data = filter_input(INPUT_POST, 'dtnsc', FILTER_SANITIZE_EMAIL);
-$requisito = filter_input(INPUT_POST, 'requisito', FILTER_SANITIZE_EMAIL);
+$nome = ($_POST['nome']);
+$email = ($_POST['email']);
+$senha = ($_POST['password']);
+$cpf = ($_POST['cpf']);
+$data = ($_POST['data']);
+$requisito = ($_POST['requisito']);
 
 //echo "Nome: $nome <br>";
 //echo "E-mail: $email <br>";
