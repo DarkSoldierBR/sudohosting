@@ -1,3 +1,9 @@
+<?php
+
+  // A sessão precisa ser iniciada em cada página diferente
+  if (!isset($_SESSION)) session_start();
+?>
+
 <html>
 
 <head>
@@ -31,19 +37,11 @@
 
     <div class="container-fluid py-5" id="background">
         <div class="container py-5" id="login-container">
-            <h2 class="text-center text-font quicksand">Crie sua conta</h2>
+            <h2 class="text-center text-font quicksand">Restaurar Senha</h2>
             <div class="col px-5 text-center my-4">
-                <!-- Nome -->
-                <div class="row my-4">
-                    <div class="col-2">
-                        <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Nome</p>
-                    </div>
-                    <div class="col">
-                        <div class="container login-campo">
-                            <input type="email" class="form-control" style="border-width: 0px; height: 33px;">
-                        </div>
-                    </div>
-                </div>
+           
+            <form action="../controller/reset_password.php" method="post">
+                    <fieldset>
 
                 <!-- Email -->
                 <div class="row my-4">
@@ -52,20 +50,7 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input type="password" class="form-control" style="border-width: 0px; height: 33px;">
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Senha -->
-                <div class="row my-4">
-                    <div class="col-2">
-                        <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Senha</p>
-                    </div>
-                    <div class="col">
-                        <div class="container login-campo">
-                            <input class="form-control" style="border-width: 0px; height: 33px;">
+                            <input type="email" name="email" class="form-control" style="border-width: 0px; height: 33px;">
 
                         </div>
                     </div>
@@ -78,7 +63,7 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');"
+                            <input type="text" name="cpf" class="form-control" onkeypress="$(this).mask('000.000.000-00');"
                                 style="border-width: 0px; height: 33px;">
                         </div>
                     </div>
@@ -91,40 +76,58 @@
                             Data de nascimento</p>
                     </div>
                     <div class="col-sm">
-                        <input id="date-input" class="login-campo text-center" type="text" style="width: 150px;">
+                        <input id="date-input" name="data_nascimento" class="login-campo text-center" type="text" style="width: 150px;">
                         <!-- datedropper init -->
-                        <script>$('#date-input').dateDropper({
+                        <script>
+                        $('#date-input').dateDropper({
                                 large: true,
-                                lang: "pt"
+                                lang: "pt",
+                                onChange: function(res) {
+                                console.log('Current date ' + (res.date.m+'/'+res.date.d+'/'+res.date.Y) );
+                            }                            
                             });
+                            
                         </script>
                     </div>
                 </div>
 
-                <!-- Aluno etec -->
-                <div class="row justify-content-between my-4">
+                <!-- Senha -->
+                <div class="row ml-1 my-4">
                     <div class="col-">
-                        <p class="font-weight-bold text-nowrap" style="font-size: 15pt;margin-left: 15px;">
-                            Aluno da ETEC</p>
+                        <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Nova Senha</p>
                     </div>
                     <div class="col-sm">
                         <div class="container login-campo">
-                            <input class="form-control" style="border-width: 0px; height: 33px;">
+                        <input type="password" name="new_password" class="form-control"
+                                            style="border-width: 0px; height: 33px;">
+
                         </div>
                     </div>
                 </div>
 
+
+
+
                 <!-- Botão -->
-                <button type="button" class="btn button-black" style="width: 30vh;">
-                    <h5 class="text-font my-auto p"><strong>Cadastrar</strong></h5>
-                </button>
-                <div class="my-4">
-                    <lead>Estudantes da ETEC conseguem hospedagem grátis para o TCC.</lead>
-                </div>
-                <p>Já possui uma conta?</p>
-                <a href="login.php">
-                    <p class="text-font">Clique aqui para entrar</p>
-                </a>
+                <button type="submit" value="btn-reser_password" class="btn button-black" style="width: 30vh;">
+                            <h5 class="text-font my-auto p"><strong>Restaurar</strong></h5>
+                        </button>
+
+
+
+                        
+                </fieldset>
+                </form>
+
+
+                <?php
+                if(isset($_SESSION["invalido"]) && $_SESSION["invalido"]=='true'){
+                          $_SESSION["invalido"] = 'false';
+                        
+                          echo '<span><div class="container text-center text-font p-1 quicksand my-4" style="background-color: #685C57; border-radius: 25px;"><lead>Dados invalidos, verifique e tente novamente.</lead></div></span></span>';
+                }
+                ?>
+
             </div>
         </div>
     </div>

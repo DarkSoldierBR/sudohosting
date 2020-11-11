@@ -4,10 +4,13 @@
   if (!isset($_SESSION)) session_start();
 
   // Verifica se não há a variável da sessão que identifica o usuário
-  if (!isset($_SESSION['UsuarioID'])) {
-      // Destrói a sessão por segurança
-      session_destroy();
-      // Redireciona o visitante de volta pro login
-      header("Location: /auth/login.php"); exit;
+  
+  if($_SESSION['UsuarioNivel']==1){
+    header("location: /auth/user/profile.php"); exit;
+  } elseif ($_SESSION['UsuarioNivel']==2){
+    header("location: /auth/adm/adm_page.php"); exit;
+  } else{ 
+    require_once($_SERVER['DOCUMENT_ROOT'].'/controller/logout.php'); 
   }
+
   ?>
