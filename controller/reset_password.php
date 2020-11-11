@@ -36,4 +36,3 @@
           //Redireciona pro Login
           header("location: /auth/login.php");
     }
-

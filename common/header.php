@@ -38,7 +38,6 @@
                             href="/pages/hosting.html">Hospedagem</a>
                     </li>
 
-
                     <?php
                     if (!isset($_SESSION)) session_start();
 
@@ -60,9 +59,6 @@
                     </div>';
                     }
                     ?>
-
-
-
 
                 </ul>
             </div>

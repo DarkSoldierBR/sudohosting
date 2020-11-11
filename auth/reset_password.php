@@ -105,20 +105,13 @@
                     </div>
                 </div>
 
-
-
-
                 <!-- Botão -->
                 <button type="submit" value="btn-reser_password" class="btn button-black" style="width: 30vh;">
                             <h5 class="text-font my-auto p"><strong>Restaurar</strong></h5>
                         </button>
 
-
-
-                        
                 </fieldset>
                 </form>
-
 
                 <?php
                 if(isset($_SESSION["invalido"]) && $_SESSION["invalido"]=='true'){
