@@ -1,5 +1,5 @@
 <?php 
-// require_once($_SERVER['DOCUMENT_ROOT'].'/controller/check.php'); 
+require_once($_SERVER['DOCUMENT_ROOT'].'/controller/check.php'); 
 ?>
 
 <html>

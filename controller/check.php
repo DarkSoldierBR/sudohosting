@@ -10,7 +10,8 @@
   } elseif ($_SESSION['UsuarioNivel']==2){
     header("location: /auth/adm/adm_page.php"); exit;
   } else{ 
-    require_once($_SERVER['DOCUMENT_ROOT'].'/controller/logout.php'); 
+    session_destroy(); // Destrói a sessão limpando todos os valores salvos
+    header("Location: /auth/login.php"); exit; 
   }
 
   ?>
