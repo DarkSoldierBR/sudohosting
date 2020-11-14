@@ -32,32 +32,11 @@ if (mysqli_num_rows($query) != 1) {
 	$_SESSION["invalido"] = 'true';
 	header("location: /auth/login.php");
 } else if ($ativo == 1) {
+    $sql = "UPDATE `tbl_usuario` SET `usu_ativo` = '0' WHERE (`usu_email` = '" . $usuario . "') AND (`usu_senha` = '" . sha1($password) . "')";
+    $query = mysqli_query($con, $sql);
+    session_destroy(); // Destrói a sessão limpando todos os valores salvos
+    header("Location: /"); exit; // Redireciona o visitante
 
-
-      // Se a sessão não existir, inicia uma
-	if (!isset($_SESSION)) session_start();
-
-      // Salva os dados encontrados na sessão
-	$_SESSION['UsuarioID'] = $resultado['usu_id'];
-	$_SESSION['UsuarioNome'] = $resultado['usu_nome'];
-	$_SESSION['UsuarioNivel'] = $resultado['usu_nivel'];
-	$_SESSION['UsuarioCPF'] = $resultado['usu_cpf'];
-	$_SESSION['UsuarioEmail'] = $resultado['usu_email'];
-    
-      //Converte data de nascimento
-	$data_nascimento = date_create($resultado['usu_dtnsc']);
-	$_SESSION['UsuarioNascimento'] = date_format($data_nascimento, "d/m/Y");
-
-      // Redireciona o visitante
-	if ($_SESSION['UsuarioNivel'] == 1) {
-		header("location: /auth/user/profile.php");
-		exit;
-	} elseif ($_SESSION['UsuarioNivel'] == 2) {
-		header("location: /auth/adm/adm_page.php");
-		exit;
-	} else {
-		require_once($_SERVER['DOCUMENT_ROOT'] . '/controller/logout.php');
-	}
 } else {
      // Mensagem de erro quando os dados são inválidos e/ou o usuário não foi encontrado
 	if (!isset($_SESSION)) session_start();

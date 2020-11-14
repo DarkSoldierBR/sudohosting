@@ -99,7 +99,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/controller/profile.php');
 
                     <div class="col">
                         <div class="text-center align-middle">
-                        <a class="btn button-black p-2" href="/auth/user/reset_password.php">
+                        <a class="btn button-black p-2" href="/auth/user/disable_account.php">
                             <lead class="font-weight-bold text-font" style="font-size: 13pt;">Excluir conta</lead>
                         </a>
                         </div>
