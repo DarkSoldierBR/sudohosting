@@ -1,4 +1,8 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'/controller/check/check_user.php'); ?>
+<?php 
+require_once($_SERVER['DOCUMENT_ROOT'].'/controller/check/check_user.php'); 
+require_once($_SERVER['DOCUMENT_ROOT'].'/controller/profile.php'); 
+
+?>
 
 <html>
 
@@ -41,7 +45,7 @@
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <input class="form-control" style="border-width: 0px; height: 33px;">
+                            <?php echo '<input class="form-control" style="border-width: 0px; height: 33px;background-color: #ffffff;" value="'.$_SESSION["UsuarioNome"].'" readonly>'; ?>
                         </div>
                     </div>
                 </div>
@@ -53,20 +57,7 @@
                     </div>
                     <div class="col d-flex justify-content-center">
                         <div class="container login-campo">
-                            <input class="form-control" style="border-width: 0px; height: 33px;">
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Senha -->
-                <div class="row my-4">
-                    <div class="col-2">
-                        <p class="my-2 text-center font-weight-bold" style="font-size: 15pt">Senha</p>
-                    </div>
-                    <div class="col d-flex justify-content-center">
-                        <div class="container login-campo">
-                            <input class="form-control" style="border-width: 0px; height: 33px;">
+                        <?php echo '<input class="form-control" style="border-width: 0px; height: 33px; background-color: #ffffff;" value="'.$_SESSION["UsuarioEmail"].'" readonly>'; ?>
 
                         </div>
                     </div>
@@ -79,8 +70,7 @@
                     </div>
                     <div class="col d-flex justify-content-center">
                         <div class="container login-campo">
-                            <input type="text" class="form-control" style="border-width: 0px; height: 33px;"
-                                onkeypress="$(this).mask('000.000.000-00');" style="border-width: 0px;">
+                        <?php echo '<input type="text" class="form-control" style="border-width: 0px; height: 33px;background-color: #ffffff;" value="'.$_SESSION["UsuarioCPF"].'" readonly>'; ?>
                         </div>
                     </div>
                 </div>
@@ -92,35 +82,41 @@
                             Data de nascimento</p>
                     </div>
                     <div class="col-sm">
-
-                        <input id="date-input" class="login-campo text-center" type="text" style="width: 150px;">
-                        <!-- datedropper init -->
-                        <script>$('#date-input').dateDropper({
-                                large: true,
-                                lang: "pt"
-                            });
-                        </script>
+                    <div class="container login-campo">
+                    <?php echo '<input type="text" class="form-control" style="border-width: 0px; height: 33px;background-color: #ffffff;" value="'.$_SESSION["UsuarioNascimento"].'" readonly>'; ?>
+                    </div>
                     </div>
                 </div>
 
                 <div class="row justify-content-between">
-                    <div class="text-center my-4">
-                        <a class="btn button-black p-2" href="/auth/user/update_profile.php">
-                            <lead class="font-weight-bold p-3 text-font" style="font-size: 13pt;">Alterar dados</lead>
+                    <div class="col">
+                        <div class="text-center align-middle">
+                        <a class="btn button-black p-2" href="/auth/user/reset_password.php">
+                            <lead class="font-weight-bold text-font" style="font-size: 13pt;">Alterar senha</lead>
                         </a>
-                         </div>
+                        </div>
+                    </div>
 
-                         <form action="../../controller/logout.php" method="post">
-                         <button type="submit" value="Logout" class="text-center my-4 btn button-black p-2">
-                          
-                                <lead class="font-weight-bold p-3 text-font" style="font-size: 13pt;">Sair</lead>
-                         
-                             </button>
+                    <div class="col">
+                        <div class="text-center align-middle">
+                        <a class="btn button-black p-2" href="/auth/user/reset_password.php">
+                            <lead class="font-weight-bold text-font" style="font-size: 13pt;">Excluir conta</lead>
+                        </a>
+                        </div>
+                    </div>
 
-                        </form>
+                    <div class="col">
+                        <div class="text-center">
+                            <form action="../../controller/logout.php" method="post">
+                                <button type="submit" value="Logout" class="text-center btn button-black p-2"> 
+                                        <lead class="font-weight-bold p-3 text-font" style="font-size: 13pt;">Sair</lead>             
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
-
-            </div>
+            </div>   
         </div>
 
         <!-- Painel -->

@@ -37,6 +37,12 @@
       $_SESSION['UsuarioID'] = $resultado['usu_id'];
       $_SESSION['UsuarioNome'] = $resultado['usu_nome'];
       $_SESSION['UsuarioNivel'] = $resultado['usu_nivel'];
+      $_SESSION['UsuarioCPF'] = $resultado['usu_cpf'];
+      $_SESSION['UsuarioEmail'] = $resultado['usu_email'];
+    
+      //Converte data de nascimento
+      $data_nascimento=date_create($resultado['usu_dtnsc']);
+      $_SESSION['UsuarioNascimento']=date_format($data_nascimento,"d/m/Y");
 
       // Redireciona o visitante
       if($_SESSION['UsuarioNivel']==1){

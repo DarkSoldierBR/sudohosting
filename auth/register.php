@@ -18,7 +18,6 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="../css/auth.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/home.css">
 
     <!-- Fonts -->
