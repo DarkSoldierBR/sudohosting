@@ -1,153 +1,133 @@
 
+
 <html>
-
-<head>
-    <title>SudoHosting</title>
-    <link rel="shortcut icon" href="/src/img/favicon.ico" title="GitHub">    
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- CSS only -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/home.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-    <!-- Header -->
-    <iframe src="/../common/header.php"
-        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-    <main class="bd-masthead" role="main">
-        <div class="container-fluid" id="fundo" style="height: 460px;">
-            <div id="row" class="row">
-                <div class="col">
-                    <div class="container mt-4  text-center">
-                        <div class="container">
-                            <img src="src/img/saas1.png" style="width: 70%" styleclass="img" alt="Logo"></div>
-                        <div class="container rounded mt-4" style="width: 60%; background-color: #FFDFD4;">
-                            <p class="font-weight-bold">Planos a partir de:</p>
-                        </div>
-                        <div class="container rounded" style="width: 60%; background-color: #FFDFD4;">
-                            <p class="font-weight-bold">R$5,99/mês*</p>
-                        </div>
-                    </div>
-
+    <head>
+       <title>SudoHosting</title>
+       <link rel="shortcut icon" href="/src/img/favicon.ico" title="GitHub">
+       <!-- Required meta tags -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <!-- CSS only -->
+       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+       <link rel="stylesheet" href="../css/home.css">
+       <!-- Fonts -->
+       <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+       <!-- Scripts -->
+       <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+       <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+       <!-- Header -->
+       <iframe src="/../common/header.php"
+          onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+       <main class="bd-masthead" role="main">
+          <div class="row justify-content-center py-4" id="fundo">
+             <div class="col-md-auto mx-5 text-center">
+                <img src="src/img/saas1.png" style="max-width: 20vmax;" styleclass="img" alt="Logo">
+                <div class="container prices-getstarted mt-4">
+                   <h6 class="font-weight-bold py-1">Planos a partir de:</h6>
                 </div>
-
-                <div class="col">
-                    <div class="container mt-4">
-
-                        <div class="text-center">
-                            <h1 class="mb-3 gradient-text" style="font-family: 'Josefin Sans', sans-serif;">
-                                Hospedagem de Servidores Rápida e Segura</h1>
-                            <p class="lead mb-4 text-font">Vendemos servidores baratos e distribuímos máquinas
-                                para
-                                realizações dos TCCs gratuitamente</p>
-                            <a class="btn gradientbutton-red" href="#container-price">
-                                <lead class="font-weight-bold text-font p-2" style="font-size: 15pt;">Comece agora</lead>
-                            </a>
-
-                        </div>
-                    </div>
+                <div class="container prices-getstarted mt-4">
+                   <h6 class="font-weight-bold py-1">Planos a partir de:</h6>
                 </div>
-            </div>
-        </div>
-
-        <div class="wave" style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+             </div>
+             <div class="col-lg-4 mx-5 text-center" style="align-items: center;">
+                <h1 class="mt-5 gradient-text" style="font-family: 'Josefin Sans', sans-serif;">
+                   Hospedagem de Servidores Rápida e Segura
+                </h1>
+                <p class="lead mb-4 text-font">Vendemos servidores baratos e distribuímos máquinas
+                   para
+                   realizações dos TCCs gratuitamente
+                </p>
+                <a class="btn gradientbutton-red" href="#container-price">
+                   <lead class="font-weight-bold text-font p-2" style="font-size: 15pt;">Comece agora</lead>
+                </a>
+             </div>
+          </div>
+          <div class="wave" style="height: 150px; overflow: hidden;">
+             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stop-color="#9E1B19" />
-                        <stop offset="100%" stop-color="#D22923" />
-                    </linearGradient>
+                   <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#9E1B19" />
+                      <stop offset="100%" stop-color="#D22923" />
+                   </linearGradient>
                 </defs>
                 <path d="M-0.85,60.68 C124.43,126.80 254.22,-51.82 500.84,80.42 L500.00,0.00 L0.00,0.00 Z"></path>
-            </svg>
-        </div>
-
-        <!-- Preços -->
-        <div class="container-fluid py-5" id="container-price">
-            <!-- Titulo planos -->
-            <div class="container" id="price-title-container" style="width: 40rem;">
+             </svg>
+          </div>
+          <!-- Preços -->
+          <div class="container-fluid py-2" id="container-price">
+             <!-- Titulo planos -->
+             <div class="container" id="price-title-container">
                 <h4 class="text-center text-font p-3"><strong>Serviços</strong></h4>
-            </div>
-            <!-- Planos -->
-            <div class="row m-4">
+             </div>
+             <!-- Planos -->
+             <div class="row m-4">
                 <!-- VPS  -->
-                <div class="col mx-4 price-plans-background">
-                  
-                        <!-- Titulo Plano -->
-                        <div class="container my-3" id="price-plan-title">
-                            <h5 class="text-center p-2"><strong>VPS</strong></h5>
-                        </div>
-                      <!-- Icone -->
-                      <div class="text-center my-2">
-                        <img src="/src/img/private 1.png" class="img" height="150px" alt="Hosting Image">
-                        </div>
-                        <!-- Descrição -->
-                        <p class="quicksand mx-3 my-2">Hospedagem de servidores privados para usos multiplos.</p>
-                         <!-- Botão -->
-                         <div class="text-center my-4">
-                            <a class="btn button-red" href="/pages/vps.html">
-                                <lead class="font-weight-bold text-font p-4" style="font-size: 13pt;">Saiba Mais</lead>
-                            </a>
-                        </div>
-           
+                <div class="col m-4 price-plans-background">
+                   <!-- Titulo Plano -->
+                   <div class="container my-3" id="price-plan-title">
+                      <h5 class="text-center p-2"><strong>VPS</strong></h5>
+                   </div>
+                   <!-- Icone -->
+                   <div class="text-center my-2">
+                      <img src="/src/img/private 1.png" class="img" height="150px" alt="Hosting Image">
+                   </div>
+                   <!-- Descrição -->
+                   <p class="quicksand mx-3 my-2">Hospedagem de servidores privados para usos multiplos.</p>
+                   <!-- Botão -->
+                   <div class="text-center my-4">
+                      <a class="btn button-red" href="/pages/vps.html">
+                         <lead class="font-weight-bold text-font p-4" style="font-size: 13pt;">Saiba Mais</lead>
+                      </a>
+                   </div>
                 </div>
                 <!-- Cloud -->
-                <div class="col mx-4 price-plans-background">
-                        <!-- Titulo Plano -->
-                        <div class="container my-3" id="price-plan-title">
-                            <h5 class="text-center p-2"><strong>Cloud</strong></h5>
-                        </div>           
-                        <!-- Icone -->
-                        <div class="text-center my-2">
-                            <img src="/src/img/cloud.png" class="img" height="150px" alt="Hosting Image">
-                            </div>
-                        <!-- Descrição -->
-                        <p class="quicksand mx-3 my-2">Cloud para armazenar seus arquivos onlinee com segurança.</p>
-                         <!-- Botão -->
-                         <div class="text-center my-4">
-                            <a class="btn button-red" href="/pages/cloud.html">
-                                <lead class="font-weight-bold text-font p-4" style="font-size: 13pt;">Saiba Mais</lead>
-                            </a>
-                        </div>
+                <div class="col m-4 price-plans-background">
+                   <!-- Titulo Plano -->
+                   <div class="container my-3" id="price-plan-title">
+                      <h5 class="text-center p-2"><strong>Cloud</strong></h5>
+                   </div>
+                   <!-- Icone -->
+                   <div class="text-center my-2">
+                      <img src="/src/img/cloud.png" class="img" height="150px" alt="Hosting Image">
+                   </div>
+                   <!-- Descrição -->
+                   <p class="quicksand mx-3 my-2">Cloud para armazenar seus arquivos online com segurança.</p>
+                   <!-- Botão -->
+                   <div class="text-center my-4">
+                      <a class="btn button-red" href="/pages/cloud.html">
+                         <lead class="font-weight-bold text-font p-4" style="font-size: 13pt;">Saiba Mais</lead>
+                      </a>
+                   </div>
                 </div>
                 <!-- Hospedagem -->
-                <div class="col mx-4 price-plans-background">
-                        <!-- Titulo Plano -->
-                        <div class="container my-3" id="price-plan-title">
-                            <h5 class="text-center p-2"><strong>Hospedagem</strong></h5>
-                        </div>
-                        <!-- Icone -->
-                        <div class="text-center my-2">
-                        <img src="/src/img/hosting.png" class="img" height="150px" alt="Hosting Image">
-                        </div>
-                        <!-- Descrição -->
-                        <p class="quicksand mx-3 my-2">Hospedagem de sites por 24 horas aos 7 dias da semana</p>
-                        <!-- Botão -->
-                        <div class="text-center my-4">
-                            <a class="btn button-red" href="/pages/hosting.html">
-                                <lead class="font-weight-bold text-font p-4" style="font-size: 13pt;">Saiba Mais</lead>
-                            </a>
-                        </div>
+                <div class="col m-4 price-plans-background">
+                   <!-- Titulo Plano -->
+                   <div class="container my-3" id="price-plan-title">
+                      <h5 class="text-center p-2"><strong>Hospedagem</strong></h5>
+                   </div>
+                   <!-- Icone -->
+                   <div class="text-center my-2">
+                      <img src="/src/img/hosting.png" class="img" height="150px" alt="Hosting Image">
+                   </div>
+                   <!-- Descrição -->
+                   <p class="quicksand mx-3 my-2">Hospedagem de sites por 24 horas aos 7 dias da semana</p>
+                   <!-- Botão -->
+                   <div class="text-center my-4">
+                      <a class="btn button-red" href="/pages/hosting.html">
+                         <lead class="font-weight-bold text-font p-4" style="font-size: 13pt;">Saiba Mais</lead>
+                      </a>
+                   </div>
                 </div>
-          
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <iframe src="common/footer.html"
-            onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-
-    </main>
-
-</body>
-
-</html>
+             </div>
+          </div>
+          <!-- Footer -->
+          <iframe src="common/footer.html"
+             onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+       </main>
+    </body>
+ </html>
+ 
+ 
