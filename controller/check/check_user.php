@@ -10,7 +10,7 @@
       // Destrói a sessão por segurança
       session_destroy();
       // Redireciona o visitante de volta pro login
-      header("Location: /"); exit;
+      header("Location: /auth/login.php"); exit;
   }
 
   ?>

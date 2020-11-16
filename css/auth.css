@@ -1,10 +1,6 @@
 #background{
     background-color: #FFDFD4;
 }
-#alert{
-    background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A);
-}
-  
 .login-campo{
     font-family: 'Quicksand', sans-serif;
     height: 40px;

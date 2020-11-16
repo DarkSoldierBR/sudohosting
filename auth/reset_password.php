@@ -31,7 +31,7 @@
       <div class="container-fluid py-5" id="background">
          <div class="col mx-auto p-3" style="background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A); border-radius:25px; max-width: 80vh">
             <div class="row">
-               <h2 class="mx-auto text-font my-4 quicksand">Acesse sua conta</h2>
+               <h2 class="mx-auto text-font my-4 quicksand">Restaurar senha</h2>
             </div>
             <div class="col text-center">
                <form action="../controller/reset_password.php" method="post">
@@ -60,7 +60,7 @@
                         </div>
                      </div>
                      <!-- Data de Nascimento -->
-                     <div class="row justify-content-between px-3 my-4">
+                     <div class="row justify-content-between px-3 my-2">
                         <p class="font-weight-bold text-nowrap" style="font-size: 15pt;">
                            Data de nascimento
                         </p>

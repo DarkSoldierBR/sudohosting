@@ -1,49 +1,35 @@
+
 .text-font{
     color: #FFDFD4;
 }
-
 .quicksand{
     font-family: 'Quicksand', sans-serif;
 }
-
 .navbar{
     background: #685C57;
-    /* background: #1d2b30; Cinza azulado*/
 }
 .nav-item:hover{
     background-color: #47403c;
 }
-
 .row{
     margin: 0px;
 }
-
 .prices-getstarted{
     background-color: #FFDFD4;
     max-width: 15em; 
     border-radius: 10px;
 }
-/* @font-face {
-    font-family: Fabada;
-    src: url(/src/font/Fabada-regular.ttf);
-  } */
-
 #fundo {
     padding-top: 30px;
     background-image: linear-gradient(to bottom,#3C3532 50%,#9E1B19);
 }
-
 path{
     fill: url(#gradient)
-   }
-   
+}
 .gradientbutton-red {
     height: 50px;
     transform: translate(-0%,-0%);
-    
     box-sizing: border-box;
-    /* background: linear-gradient(90deg,#dd1818, #333333, #dd1818);   */
-    /* background-color: #dd1818; */
     background: linear-gradient(90deg,#FF0000,#800000,#FF0000);
     text-align: center;
     background-size: 400%;
@@ -51,26 +37,21 @@ path{
     transition-duration: 0.7s;
     animation: gradientbutton 8s linear infinite;  
     z-index: 1; 
-   }
-   
-   .gradientbutton-red:hover {
+}
+    .gradientbutton-red:hover {
     -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.7);
-   }
-   
-   @keyframes gradientbutton {
+}
+@keyframes gradientbutton {
     0% {   
-     background-position: 0%;   
+    background-position: 0%;   
     }
-
     100% {   
-        background-position: 400%;   
-       }
-
-   }
-   
-   .gradientbutton-red:before {  
+    background-position: 400%;   
+    }
+}
+.gradientbutton-red:before {  
     content: '';  
     position: absolute;   
     top: -5px;   
@@ -85,17 +66,15 @@ path{
     transition: 0.5s;  
     opacity: 1;  
     animation: animate 8s linear infinite;  
-   }
-
-   .button-black{
-       background-color: #221E1C;
-       border-radius: 25px;
-   }
-   .button-black:hover{
-        background-color: #86360E;
-   }
-
-   .button-red{
+}
+    .button-black{
+    background-color: #221E1C;
+    border-radius: 25px;
+}
+    .button-black:hover{
+    background-color: #86360E;
+}
+    .button-red{
     background-color: #FF0000;
     border-radius: 25px;
     -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.55);
@@ -103,17 +82,15 @@ path{
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.55);
     transition-duration: 0.6s;
     }
-    .button-red:hover{
-        background-color: #86360E;
-        -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 1.0);
-        -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 1.0);
-        box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 1.0);
-    }
-
+.button-red:hover{
+    background-color: #86360E;
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 1.0);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 1.0);
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 1.0);
+}
 html {
     scroll-behavior: smooth;
-  }
-  
+}
 #container-price {
     background-color: #FFDFD4;
 }
@@ -123,7 +100,6 @@ html {
 #footer-services-title{
     color: #FF5232;
 }
-
 #footer-license-background{
     background-color: #221E1C;
 }
@@ -131,7 +107,7 @@ html {
     background-image: linear-gradient(#FF0000,#FF5232);
 }
 #price-title-container{
-    max-width: 300px;
+    max-width: 60%;
     background: -webkit-linear-gradient(right,#8E0E00,#1F1C18);
     background-size: 400%;
     animation-name: animationgradient;
@@ -140,7 +116,6 @@ html {
     -webkit-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
     -moz-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
     box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
-
 }
 .price-plans-background{
     background-color: #FF9E81; 
@@ -148,7 +123,6 @@ html {
     -webkit-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
     -moz-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
     box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.28);
-
 }
 .price-plans-background:hover{
     transition-duration: 0.7s;
@@ -156,8 +130,7 @@ html {
     -moz-box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.70);
     box-shadow: 10px 10px 72px 9px rgba(0,0,0,0.70);
 }
-
-#price-plan-title{
+    #price-plan-title{
     background-color: #FF7B5A;
     border-radius: 17px;
 }
@@ -165,19 +138,16 @@ html {
     background-color: #221E1C;
     border-radius: 20px;
 }
-#price-desc-background{
+    #price-desc-background{
     background-color: #FF9372;
     border-radius: 20px;
 }
-
 .table-sudo{
     background-color: #FF7B5A;
-
     }
-
 #desc-title{
-border-radius: 15px;
-background-color: #B59E96;
+    border-radius: 15px;
+    background-color: #B59E96;
 }
 .gradient-text{
     font-family: 'Anton', sans-serif;
@@ -190,17 +160,16 @@ background-color: #B59E96;
     display: inline-block;
     animation-name: animationgradient;
     animation: animationgradient 8s infinite linear;
-  }
-  
-  @keyframes animationgradient {
+}
+@keyframes animationgradient {
     0% {
-        background-position: 0% 0%;
+    background-position: 0% 0%;
     }
     50% {
-        background-position: 100% 0%;
+    background-position: 100% 0%;
     }
     100% {
-        background-position: 0% 0%;
+    background-position: 0% 0%;
     }
 }
 .wave{
@@ -213,7 +182,7 @@ background-color: #B59E96;
 .nav-link:hover{
     color: #F27121;
 }
-
 .custom_toggle{
     color: black;
 }
+    
