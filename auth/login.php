@@ -7,7 +7,7 @@
 <html>
    <head>
       <title>SudoHosting</title>
-      <link rel="shortut icon" href="/src/img/favicon.ico" title="GitHub">
+      <link rel="shortut icon" href="/src/img/favicon.ico" title="SudoHosting">
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,6 +15,9 @@
       <link rel="stylesheet" href="../css/auth.css">
       <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="../css/home.css">
+        <!-- Scripts -->
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
    </head>
@@ -64,7 +67,7 @@
                                   echo '<span><div class="container text-center text-font p-1 quicksand my-4" style="background-color: #685C57; border-radius: 25px;"><lead>Email ou senha invalidos, verifique e tente novamente.</lead></div></span></span>';
                         }
                         ?>
-                     <button type="submit" value="btn-login" class="btn button-black" style="width: 30vh;">
+                     <button type="submit" value="btn-login" class="btn button-black y-2 px-3">
                         <h5 class="text-font my-auto p"><strong>Entrar</strong></h5>
                      </button>
                   </fieldset>
