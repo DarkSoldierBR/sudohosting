@@ -1,15 +1,10 @@
 #background{
-    /* background-color: #FFDFD4; */
-    
     background-color: #FFDFD4;
 }
-#login-container{
+#alert{
     background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A);
-    /* background-color: #685C57; */
-
-    border-radius: 25px;
-    width: 30em;
 }
+  
 .login-campo{
     font-family: 'Quicksand', sans-serif;
     height: 40px;

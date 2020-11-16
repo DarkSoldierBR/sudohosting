@@ -131,7 +131,7 @@ html {
     background-image: linear-gradient(#FF0000,#FF5232);
 }
 #price-title-container{
-    max-width: 60vh;
+    max-width: 300px;
     background: -webkit-linear-gradient(right,#8E0E00,#1F1C18);
     background-size: 400%;
     animation-name: animationgradient;

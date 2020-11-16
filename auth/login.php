@@ -23,9 +23,11 @@
       <iframe src="/../common/header.php"
          onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
       <div class="container-fluid py-5" id="background">
-         <div class="container py-5" id="login-container">
-            <h2 class="text-center text-font quicksand">Acesse sua conta</h2>
-            <div class="col px-5 text-center my-4">
+         <div class="col mx-auto p-3" style="background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A); border-radius:25px; max-width: 80vh">
+            <div class="row">
+               <h2 class="mx-auto text-font my-4 quicksand">Acesse sua conta</h2>
+            </div>
+            <div class="col text-center">
                <form action="../controller/login.php" method="post">
                   <fieldset>
                      <!-- Email -->
