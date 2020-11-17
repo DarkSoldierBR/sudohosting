@@ -68,7 +68,7 @@
                         }
                         ?>
                      <button type="submit" value="btn-login" class="btn button-black y-2 px-3">
-                        <h5 class="text-font my-auto p"><strong>Entrar</strong></h5>
+                     <h5 class="text-font my-auto py-1 px-2"><strong>Entrar</strong></h5>
                      </button>
                   </fieldset>
                </form>

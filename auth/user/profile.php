@@ -1,6 +1,7 @@
 <?php 
 require_once($_SERVER['DOCUMENT_ROOT'].'/controller/check/check_user.php'); 
 require_once($_SERVER['DOCUMENT_ROOT'].'/controller/profile.php'); 
+if (!isset($_SESSION)) session_start();
 
 ?>
 
@@ -46,7 +47,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/controller/profile.php');
                     </div>
                     <div class="col">
                         <div class="container login-campo">
-                            <?php echo '<input class="form-control" style="border-width: 0px; height: 33px;background-color: #ffffff;" value="'.$_SESSION["UsuarioNome"].'" readonly>'; ?>
+                        <?php echo '<input class="form-control" style="border-width: 0px; height: 33px; background-color: #ffffff;" value="'.$_SESSION["UsuarioNome"].'" readonly>'; ?>
                         </div>
                     </div>
                 </div>

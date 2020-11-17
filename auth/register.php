@@ -27,7 +27,7 @@
       <div class="container-fluid py-5" id="background">
          <div class="col mx-auto p-3" style="background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A); border-radius:25px; max-width: 80vh">
             <div class="row">
-               <h2 class="mx-auto text-font my-4 quicksand">Restaurar senha</h2>
+               <h2 class="mx-auto text-font my-4 quicksand">Cadastrar</h2>
             </div>
             <div class="col text-center">
                <form action="../controller/register.php" method="post">
@@ -96,8 +96,8 @@
                         </script>
                      </div>
                      <!-- Botão -->
-                     <button type="submit" value="btn-register" class="btn button-black" style="width: 30vh;">
-                        <h5 class="text-font my-auto p"><strong>Cadastrar</strong></h5>
+                     <button type="submit" value="btn-register" class="btn button-black">
+                        <h5 class="text-font my-auto py-1 px-2"><strong>Cadastrar</strong></h5>
                      </button>
                   </fieldset>
                </form>

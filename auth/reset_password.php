@@ -91,7 +91,7 @@
                      </div>
                      <!-- Botão -->
                      <button type="submit" value="btn-reset_password" class="btn button-black py-2 px-3">
-                        <h5 class="text-font my-auto p"><strong>Restaurar</strong></h5>
+                     <h5 class="text-font my-auto py-1 px-2"><strong>Restaurar</strong></h5>
                      </button>
                   </fieldset>
                </form>
