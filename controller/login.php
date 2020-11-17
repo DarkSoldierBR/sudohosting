@@ -9,9 +9,9 @@ if (!empty($_POST) AND (empty($_POST['email']) OR empty($_POST['password']))) {
 }
 
   // Tenta se conectar ao servidor MySQL
-mysqli_connect('localhost', 'root', '') or trigger_error(mysql_error());
+mysqli_connect('localhost', 'root', 'sudo123') or trigger_error(mysql_error());
   // Tenta se conectar a um banco de dados MySQL
-$con = mysqli_connect("localhost", "root", "", "test");
+$con = mysqli_connect("localhost", "root", "sudo123", "website");
 
 $usuario = $_POST['email'];
 $password = $_POST['password'];

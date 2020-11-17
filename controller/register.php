@@ -2,9 +2,9 @@
   // A sessão precisa ser iniciada em cada página diferente
   if (!isset($_SESSION)) session_start();
   // Tenta se conectar ao servidor MySQL
-  mysqli_connect('localhost', 'root', '') or trigger_error(mysql_error());
+  mysqli_connect('localhost', 'root', 'sudo123') or trigger_error(mysql_error());
   // Tenta se conectar a um banco de dados MySQL
-  $con = mysqli_connect("localhost", "root", "", "test");
+$con = mysqli_connect("localhost", "root", "sudo123", "website");
 
   $nome = $_POST['name'];
   $email = $_POST['email'];
