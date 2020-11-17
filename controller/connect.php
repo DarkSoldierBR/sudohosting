@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "root";
+$username = "sudohosting";
 $password = "sudo123";
 
 // Cria um conexão

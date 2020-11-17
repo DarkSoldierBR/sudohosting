@@ -8,6 +8,7 @@ if (!empty($_POST) AND (empty($_POST['email']) OR empty($_POST['password']))) {
 	header("location: /auth/login.php");
 }
 
+// Conecta ao banco atraves do connect.php
 require_once($_SERVER['DOCUMENT_ROOT'].'/controller/connect.php'); 
 
 $usuario = $_POST['email'];
