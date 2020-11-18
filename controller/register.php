@@ -31,7 +31,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/controller/connect.php');
 } else {
    
   // Insere a query de cadastros com os dados no Mysql
-  $sql = "INSERT INTO `tbl_usuario` (`usu_id`, `usu_nome`, `usu_senha`, `usu_email`, `usu_nivel`, `usu_ativo`, `usu_cadastro`, `usu_dtnsc`, `usu_cpf`) VALUES ('  ', '".$nome."', SHA1('".$password."'), '".$email."', '1', '1', ' ', '".$data_nascimento."', '".$cpf."');";  
+  $sql = "INSERT INTO `tbl_usuario` (`usu_nome`, `usu_senha`, `usu_email`, `usu_nivel`, `usu_ativo`, `usu_dtnsc`, `usu_cpf`) VALUES (".$nome."', SHA1('".$password."'), '".$email."', '1', '1', '".$data_nascimento."', '".$cpf."');";  
   $query = mysqli_query($con,$sql);
 
   //   Verifica se o usuario foi inserido

@@ -3,27 +3,21 @@
 <html>
 
 <head>
-    <title>SudoHosting</title>
-    <link rel="shortut icon" href="../src/img/favicon.ico" title="GitHub">
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="../src/script/datedropper/datedropper.pro.min.js"></script>
-
-    <!-- CSS only -->
-    <link rel="stylesheet" href="/../css/auth.css">
-    <link rel="stylesheet" href="/../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/../css/home.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-
-</head>
+      <title>SudoHosting</title>
+      <link rel="shortut icon" href="/src/img/favicon.ico" title="SudoHosting">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- CSS only -->
+      <link rel="stylesheet" href="/../css/auth.css">
+      <link rel="stylesheet" href="/../node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/../css/home.css">
+        <!-- Scripts -->
+        <script src="/../node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="/../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+   </head>
 
 <body>
     <!-- Header -->
@@ -31,7 +25,7 @@
         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
     <div class="container-fluid py-5" id="background">
-        <div class="container py-5" id="login-container">
+    <div class="col mx-auto p-3" style="background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A); border-radius:25px; max-width: 80vh">
             <h2 class="text-center text-font quicksand">Usuarios</h2>
             <div class="col px-5 text-center my-3">
                 <div>

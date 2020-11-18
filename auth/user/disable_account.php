@@ -3,11 +3,13 @@
 <?php
    // A sessão precisa ser iniciada em cada página diferente
    if (!isset($_SESSION)) session_start();
+   require_once($_SERVER['DOCUMENT_ROOT'].'/controller/check/check_user.php'); 
+
    ?>
 <html>
    <head>
       <title>SudoHosting</title>
-      <link rel="shortut icon" href="/src/img/favicon.ico" title="GitHub">
+      <link rel="shortut icon" href="/src/img/favicon.ico" title="SudoHosting">
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,6 +17,9 @@
       <link rel="stylesheet" href="/../css/auth.css">
       <link rel="stylesheet" href="/../node_modules/bootstrap/dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="/../css/home.css">
+        <!-- Scripts -->
+        <script src="/../node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="/../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
    </head>
@@ -23,13 +28,12 @@
       <iframe src="/../common/header.php"
          onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
       <div class="container-fluid py-5" id="background">
-         <div class="container py-5" id="login-container">
-            <h2 class="text-center text-font quicksand">Excluir conta</h2>
-            <lead>
-               <h5 class="text-center text-font quicksand">Confirme seus dados</h5>
-            </lead>
-            <div class="col px-5 text-center my-4">
-               <form action="/../controller/disable_account.php" method="post">
+      <div class="col mx-auto p-3" style="background-image: linear-gradient(#FF0000, #FF5232,#FF7B5A); border-radius:25px; max-width: 80vh">
+            <div class="row">
+               <h2 class="mx-auto text-font my-4 quicksand">Acesse sua conta</h2>
+            </div>
+            <div class="col text-center">
+               <form action="../controller/login.php" method="post">
                   <fieldset>
                      <!-- Email -->
                      <div class="form-group">
@@ -62,12 +66,11 @@
                      <?php
                         if(isset($_SESSION["invalido"]) && $_SESSION["invalido"]=='true'){
                                   $_SESSION["invalido"] = 'false';
-                                
                                   echo '<span><div class="container text-center text-font p-1 quicksand my-4" style="background-color: #685C57; border-radius: 25px;"><lead>Email ou senha invalidos, verifique e tente novamente.</lead></div></span></span>';
                         }
                         ?>
-                     <button type="submit" value="btn-login" class="btn button-black" style="width: 30vh;">
-                        <h5 class="text-font my-auto p"><strong>Excluir</strong></h5>
+                     <button type="submit" value="btn-login" class="btn button-black y-2 px-3">
+                     <h5 class="text-font my-auto py-1 px-2"><strong>Excluir</strong></h5>
                      </button>
                      <div class="my-2">
                         <lead>

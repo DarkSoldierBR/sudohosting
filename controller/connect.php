@@ -4,7 +4,7 @@ $username = "sudohosting";
 $password = "sudo123";
 
 // Cria um conexão
-$conn = new mysqli($servername, $username, $password,"website");
+$con = new mysqli($servername, $username, $password,"website");
 
 // Verifica a conexão 
 if ($con->connect_error) {
