@@ -1,10 +1,10 @@
 <?php
 $servername = "localhost";
-$username = "sudohosting";
-$password = "sudo123";
+$username = "root";
+$password = "";
 
 // Cria um conexão
-$con = new mysqli($servername, $username, $password,"website");
+$con = new mysqli($servername, $username, $password,"test");
 
 // Verifica a conexão 
 if ($con->connect_error) {
