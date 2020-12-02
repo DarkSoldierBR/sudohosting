@@ -76,26 +76,22 @@ if (!isset($_SESSION)) session_start();
                         </div>
                     </div>
                 </div>
+            
                 <!-- Data de Nascimento -->
-                <div class="row my-4">
-                                        <p class="font-weight-bold text-nowrap" style="font-size: 15pt;">
-                                        Data de nascimento
-                                        </p>
-                                        <?php echo '<input id="date-input" name="data_nascimento" class="login-campo text-center"  style="border-width: 0px; height: 33px;background-color: #ffffff;" value="'.$_SESSION["UsuarioNascimento"].'" readonly>'; ?>
-                                        
-                                    </div>
-
-                                   
-                
+                <div class="row justify-content-between px-3 my-4">
+                        <p class="font-weight-bold text-nowrap" style="font-size: 15pt;">
+                           Data de nascimento
+                        </p>
+                        <?php echo '<input id="date-input" name="data_nascimento" class="login-campo text-center" type="text" style="max-width: 7rem;" value="'.$_SESSION["UsuarioNascimento"].'" readonly>'; ?>
+                        
+                     </div>                                    
 
                 <div class="row justify-content-between">
-
-
-                              
+                             
                 <div class="col">
                     <div class="text-center align-middle">
                     <a class="btn button-black p-2" href="/auth/reset_password.php">
-                        <lead class="font-weight-bold text-font" style="font-size: 13pt;">Alterar senha</lead>
+                        <lead class="font-weight-bold text-font text-nowrap" style="font-size: 13pt;">Alterar senha</lead>
                     </a>
                     </div>
                 </div>
@@ -139,9 +135,11 @@ if (!isset($_SESSION)) session_start();
                     <div class="col my-4 text-center">
                         <img src="/src/img/cloud.png" class="img" height="200px" alt="Cloud Image">
                         <h4><strong>Clique para acessar a Cloud</strong></h4>
+                        <a href="http://sudohosting.servehttp.com:223/nextcloud/">
                         <div class="col-5 mx-auto button-red my-4">
                             <h5 class="text-font p-2"><strong>Acessar</strong></h5>
                         </div>
+                        </a>
 
                     </div>
                     <!-- Hospedagem -->
